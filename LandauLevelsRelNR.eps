@@ -1,0 +1,2037 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: LandauLevelsRelNR.fig
+%%Creator: fig2dev Version 3.2 Patchlevel 5
+%%CreationDate: Wed Aug 12 16:37:33 2009
+%%For: goerbig@skyrmion (goerbig,,,)
+%%BoundingBox: 0 0 1050 484
+%Magnification: 1.0000
+%%EndComments
+%%BeginProlog
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+
+end
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/reencdict 12 dict def /ReEncode { reencdict begin
+/newcodesandnames exch def /newfontname exch def /basefontname exch def
+/basefontdict basefontname findfont def /newfont basefontdict maxlength dict def
+basefontdict { exch dup /FID ne { dup /Encoding eq
+{ exch dup length array copy newfont 3 1 roll put }
+{ exch newfont 3 1 roll put } ifelse } { pop pop } ifelse } forall
+newfont /FontName newfontname put newcodesandnames aload pop
+128 1 255 { newfont /Encoding get exch /.notdef put } for
+newcodesandnames length 2 idiv { newfont /Encoding get 3 1 roll put } repeat
+newfontname newfont definefont pop end } def
+/isovec [
+8#055 /minus 8#200 /grave 8#201 /acute 8#202 /circumflex 8#203 /tilde
+8#204 /macron 8#205 /breve 8#206 /dotaccent 8#207 /dieresis
+8#210 /ring 8#211 /cedilla 8#212 /hungarumlaut 8#213 /ogonek 8#214 /caron
+8#220 /dotlessi 8#230 /oe 8#231 /OE
+8#240 /space 8#241 /exclamdown 8#242 /cent 8#243 /sterling
+8#244 /currency 8#245 /yen 8#246 /brokenbar 8#247 /section 8#250 /dieresis
+8#251 /copyright 8#252 /ordfeminine 8#253 /guillemotleft 8#254 /logicalnot
+8#255 /hyphen 8#256 /registered 8#257 /macron 8#260 /degree 8#261 /plusminus
+8#262 /twosuperior 8#263 /threesuperior 8#264 /acute 8#265 /mu 8#266 /paragraph
+8#267 /periodcentered 8#270 /cedilla 8#271 /onesuperior 8#272 /ordmasculine
+8#273 /guillemotright 8#274 /onequarter 8#275 /onehalf
+8#276 /threequarters 8#277 /questiondown 8#300 /Agrave 8#301 /Aacute
+8#302 /Acircumflex 8#303 /Atilde 8#304 /Adieresis 8#305 /Aring
+8#306 /AE 8#307 /Ccedilla 8#310 /Egrave 8#311 /Eacute
+8#312 /Ecircumflex 8#313 /Edieresis 8#314 /Igrave 8#315 /Iacute
+8#316 /Icircumflex 8#317 /Idieresis 8#320 /Eth 8#321 /Ntilde 8#322 /Ograve
+8#323 /Oacute 8#324 /Ocircumflex 8#325 /Otilde 8#326 /Odieresis 8#327 /multiply
+8#330 /Oslash 8#331 /Ugrave 8#332 /Uacute 8#333 /Ucircumflex
+8#334 /Udieresis 8#335 /Yacute 8#336 /Thorn 8#337 /germandbls 8#340 /agrave
+8#341 /aacute 8#342 /acircumflex 8#343 /atilde 8#344 /adieresis 8#345 /aring
+8#346 /ae 8#347 /ccedilla 8#350 /egrave 8#351 /eacute
+8#352 /ecircumflex 8#353 /edieresis 8#354 /igrave 8#355 /iacute
+8#356 /icircumflex 8#357 /idieresis 8#360 /eth 8#361 /ntilde 8#362 /ograve
+8#363 /oacute 8#364 /ocircumflex 8#365 /otilde 8#366 /odieresis 8#367 /divide
+8#370 /oslash 8#371 /ugrave 8#372 /uacute 8#373 /ucircumflex
+8#374 /udieresis 8#375 /yacute 8#376 /thorn 8#377 /ydieresis] def
+/Times-Roman /Times-Roman-iso isovec ReEncode
+/Helvetica /Helvetica-iso isovec ReEncode
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+/pageheader {
+save
+newpath 0 484 moveto 0 0 lineto 1050 0 lineto 1050 484 lineto closepath clip newpath
+428.4 577.9 translate
+1 -1 scale
+$F2psBegin
+10 setmiterlimit
+0 slj 0 slc
+ 0.06000 0.06000 sc
+} bind def
+/pagefooter {
+$F2psEnd
+restore
+} bind def
+%%EndProlog
+pageheader
+%
+% Fig objects follow
+%
+% 
+% here starts figure with depth 50
+% Polyline
+%
+% pen to black in case this eps object doesn't set color first
+0 0 0 setrgbcolor
+% Begin Imported EPS File: /home/goerbig/Teaching/LesHouches2009/LectureNotes/RelLL.eps
+%%BeginDocument: /home/goerbig/Teaching/LesHouches2009/LectureNotes/RelLL.eps
+%
+n gs
+1725 1575 tr
+32.467532 -32.467532 sc
+0 -231 tr
+-91 -3 tr
+sa
+n 91 3 m 322 3 l 322 234 l 91 234 l cp clip n
+countdictstack
+mark
+/showpage {} def
+% EPS file follows:
+%!PS-Adobe-2.0 EPSF-1.2
+%%BoundingBox: 91 3 322 234
+%%HiResBoundingBox: 91.5625 3.1875 321.938 233.562
+%%Creator: (Mathematica 5.2 for X)
+%%CreationDate: (Monday, March 12, 2007) (16:44:06)
+%%Title: Clipboard
+%%DocumentNeededResources: font Courier
+%%DocumentSuppliedResources:
+%%DocumentNeededFonts: Courier
+%%DocumentSuppliedFonts:
+%%DocumentFonts: Courier
+%%EndComments
+0 236.75 translate 1 -1 scale
+150 dict begin
+/Mfixwid true def
+/Mrot 0 def
+/Mpstart {
+    MathPictureStart
+} bind def
+/Mpend {
+    MathPictureEnd
+} bind def
+/Mscale {
+    0 1 0 1
+    5 -1 roll
+    MathScale
+} bind def
+/Plain	/Courier findfont def
+/Bold	/Courier-Bold findfont def
+/Italic /Courier-Oblique findfont def
+/MathPictureStart {
+	/Mimatrix
+	 matrix currentmatrix
+	def
+	gsave
+	newpath
+	Mleft
+	Mbottom
+	translate
+	/Mtmatrix
+	matrix currentmatrix
+	def
+	Plain
+	Mfontsize scalefont
+	setfont
+	0 setgray
+	0 setlinewidth
+} bind def
+/MathPictureEnd {
+	grestore
+} bind def
+/MathSubStart {
+ 	     Momatrix
+        Mgmatrix Mtmatrix
+        Mleft Mbottom
+        Mwidth Mheight
+        9 -2 roll
+        moveto
+        Mtmatrix setmatrix
+        currentpoint
+        Mgmatrix setmatrix
+        11 -2 roll
+        moveto
+        Mtmatrix setmatrix
+        currentpoint
+        2 copy translate
+        /Mtmatrix matrix currentmatrix def
+        /Mleft 0 def
+        /Mbottom 0 def
+        3 -1 roll
+        exch sub
+        /Mheight exch def
+        sub
+        /Mwidth exch def
+} bind def
+/MathSubEnd {
+        /Mheight exch def
+        /Mwidth exch def
+        /Mbottom exch def
+        /Mleft exch def
+        /Mtmatrix exch def
+        dup setmatrix
+        /Mgmatrix exch def
+	      /Momatrix exch def
+} bind def
+/Mdot {
+	moveto
+	0 0 rlineto
+	stroke
+} bind def
+/Mtetra {
+	moveto
+	lineto
+	lineto
+	lineto
+	fill
+} bind def
+/Metetra {
+	moveto
+	lineto
+	lineto
+	lineto
+	closepath
+	gsave
+	fill
+	grestore
+	0 setgray
+	stroke
+} bind def
+/Mistroke {
+	flattenpath
+	0 0 0
+	{
+	4 2 roll
+	pop pop
+	}
+	{
+	4 -1 roll
+	2 index
+	sub dup mul
+	4 -1 roll
+	2 index
+	sub dup mul
+	add sqrt
+	4 -1 roll
+	add
+	3 1 roll
+	}
+	{
+	stop
+	}
+	{
+	stop
+	}
+	pathforall
+	pop pop
+	currentpoint
+	stroke
+	moveto
+	currentdash
+	3 -1 roll
+	add
+	setdash
+} bind def
+/Mfstroke {
+	stroke
+	currentdash
+	pop 0
+	setdash
+} bind def
+/Mrotsboxa {
+	gsave
+	dup
+	/Mrot
+	exch def
+	Mrotcheck
+	Mtmatrix
+	dup
+	setmatrix
+	7 1 roll
+	4 index
+	4 index
+	translate
+	rotate
+	3 index
+	-1 mul
+	3 index
+	-1 mul
+	translate
+	/Mtmatrix
+	matrix
+	currentmatrix
+	def
+	grestore
+	Msboxa
+	3  -1 roll
+	/Mtmatrix
+	exch def
+	/Mrot
+	0 def
+} bind def
+/Msboxa {
+	newpath
+	5 -1 roll
+	Mvboxa
+	pop
+	Mboxout
+	6 -1 roll
+	5 -1 roll
+	4 -1 roll
+	Msboxa1
+	5 -3 roll
+	Msboxa1
+	Mboxrot
+	[
+	7 -2 roll
+	2 copy
+	[
+	3 1 roll
+	10 -1 roll
+	9 -1 roll
+	]
+	6 1 roll
+	5 -2 roll
+	]
+} bind def
+/Msboxa1 {
+	sub
+	2 div
+	dup
+	2 index
+	1 add
+	mul
+	3 -1 roll
+	-1 add
+	3 -1 roll
+	mul
+} bind def
+/Mvboxa	{
+	Mfixwid
+	{
+	Mvboxa1
+	}
+	{
+	dup
+	Mwidthcal
+	0 exch
+	{
+	add
+	}
+	forall
+	exch
+	Mvboxa1
+	4 index
+	7 -1 roll
+	add
+	4 -1 roll
+	pop
+	3 1 roll
+	}
+	ifelse
+} bind def
+/Mvboxa1 {
+	gsave
+	newpath
+	[ true
+	3 -1 roll
+	{
+	Mbbox
+	5 -1 roll
+	{
+	0
+	5 1 roll
+	}
+	{
+	7 -1 roll
+	exch sub
+	(m) stringwidth pop
+	.3 mul
+	sub
+	7 1 roll
+	6 -1 roll
+	4 -1 roll
+	Mmin
+	3 -1 roll
+	5 index
+	add
+	5 -1 roll
+	4 -1 roll
+	Mmax
+	4 -1 roll
+	}
+	ifelse
+	false
+	}
+	forall
+	{ stop } if
+	counttomark
+	1 add
+	4 roll
+	]
+	grestore
+} bind def
+/Mbbox {
+	0 0 moveto
+	false charpath
+	flattenpath
+	pathbbox
+	newpath
+} bind def
+/Mmin {
+	2 copy
+	gt
+	{ exch } if
+	pop
+} bind def
+/Mmax {
+	2 copy
+	lt
+	{ exch } if
+	pop
+} bind def
+/Mrotshowa {
+	dup
+	/Mrot
+	exch def
+	Mrotcheck
+	Mtmatrix
+	dup
+	setmatrix
+	7 1 roll
+	4 index
+	4 index
+	translate
+	rotate
+	3 index
+	-1 mul
+	3 index
+	-1 mul
+	translate
+	/Mtmatrix
+	matrix
+	currentmatrix
+	def
+	Mgmatrix setmatrix
+	Mshowa
+	/Mtmatrix
+	exch def
+	/Mrot 0 def
+} bind def
+/Mshowa {
+	4 -2 roll
+	moveto
+	2 index
+	Mtmatrix setmatrix
+	Mvboxa
+	7 1 roll
+	Mboxout
+	6 -1 roll
+	5 -1 roll
+	4 -1 roll
+	Mshowa1
+	4 1 roll
+	Mshowa1
+	rmoveto
+	currentpoint
+	Mfixwid
+	{
+	Mshowax
+	}
+	{
+	Mshoway
+	}
+	ifelse
+	pop pop pop pop
+	Mgmatrix setmatrix
+} bind def
+/Mshowax {
+	0 1
+        4 index length
+        -1 add
+        {
+        2 index
+        4 index
+        2 index
+        get
+        3 index
+        add
+        moveto
+        4 index
+        exch get
+        show
+        } for
+} bind def
+/Mshoway {
+        3 index
+        Mwidthcal
+        5 1 roll
+	0 1
+	4 index length
+	-1 add
+	{
+	2 index
+	4 index
+	2 index
+	get
+	3 index
+	add
+	moveto
+	4 index
+	exch get
+	[
+	6 index
+	aload
+	length
+	2 add
+	-1 roll
+	{
+	pop
+	Strform
+	stringwidth
+	pop
+	neg
+	exch
+	add
+	0 rmoveto
+	}
+	exch
+	kshow
+	cleartomark
+	} for
+	pop
+} bind def
+/Mwidthcal {
+	[
+	exch
+	{
+	Mwidthcal1
+	}
+	forall
+	]
+	[
+	exch
+	dup
+	Maxlen
+	-1 add
+	0 1
+	3 -1 roll
+	{
+	[
+	exch
+	2 index
+	{
+	1 index
+	Mget
+	exch
+	}
+	forall
+	pop
+	Maxget
+	exch
+	}
+	for
+	pop
+	]
+	Mreva
+} bind def
+/Mreva	{
+	[
+	exch
+	aload
+	length
+	-1 1
+	{1 roll}
+	for
+	]
+} bind def
+/Mget	{
+	1 index
+	length
+	-1 add
+	1 index
+	ge
+	{
+	get
+	}
+	{
+	pop pop
+	0
+	}
+	ifelse
+} bind def
+/Maxlen	{
+	[
+	exch
+	{
+	length
+	}
+	forall
+	Maxget
+} bind def
+/Maxget	{
+	counttomark
+	-1 add
+	1 1
+	3 -1 roll
+	{
+	pop
+	Mmax
+	}
+	for
+	exch
+	pop
+} bind def
+/Mwidthcal1 {
+	[
+	exch
+	{
+	Strform
+	stringwidth
+	pop
+	}
+	forall
+	]
+} bind def
+/Strform {
+	/tem (x) def
+	tem 0
+	3 -1 roll
+	put
+	tem
+} bind def
+/Mshowa1 {
+	2 copy
+	add
+	4 1 roll
+	sub
+	mul
+	sub
+	-2 div
+} bind def
+/MathScale {
+	Mwidth
+	Mheight
+	Mlp
+	translate
+	scale
+	/yscale exch def
+	/ybias exch def
+	/xscale exch def
+	/xbias exch def
+	/Momatrix
+	xscale yscale matrix scale
+	xbias ybias matrix translate
+	matrix concatmatrix def
+	/Mgmatrix
+	matrix currentmatrix
+	def
+} bind def
+/Mlp {
+	3 copy
+	Mlpfirst
+	{
+	Mnodistort
+	{
+	Mmin
+	dup
+	} if
+	4 index
+	2 index
+	2 index
+	Mlprun
+	11 index
+	11 -1 roll
+	10 -4 roll
+	Mlp1
+	8 index
+	9 -5 roll
+	Mlp1
+	4 -1 roll
+	and
+	{ exit } if
+	3 -1 roll
+	pop pop
+	} loop
+	exch
+	3 1 roll
+	7 -3 roll
+	pop pop pop
+} bind def
+/Mlpfirst {
+	3 -1 roll
+	dup length
+	2 copy
+	-2 add
+	get
+	aload
+	pop pop pop
+	4 -2 roll
+	-1 add
+	get
+	aload
+	pop pop pop
+	6 -1 roll
+	3 -1 roll
+	5 -1 roll
+	sub
+	dup /MsaveAx exch def
+	div
+	4 1 roll
+	exch sub
+	dup /MsaveAy exch def
+	div
+} bind def
+/Mlprun {
+	2 copy
+	4 index
+	0 get
+	dup
+	4 1 roll
+	Mlprun1
+	3 copy
+	8 -2 roll
+	9 -1 roll
+	{
+	3 copy
+	Mlprun1
+	3 copy
+	11 -3 roll
+	/gt Mlpminmax
+	8 3 roll
+	11 -3 roll
+	/lt Mlpminmax
+	8 3 roll
+	} forall
+	pop pop pop pop
+	3 1 roll
+	pop pop
+	aload pop
+	5 -1 roll
+	aload pop
+	exch
+	6 -1 roll
+	Mlprun2
+	8 2 roll
+	4 -1 roll
+	Mlprun2
+	6 2 roll
+	3 -1 roll
+	Mlprun2
+	4 2 roll
+	exch
+	Mlprun2
+	6 2 roll
+} bind def
+/Mlprun1 {
+	aload pop
+	exch
+	6 -1 roll
+	5 -1 roll
+	mul add
+	4 -2 roll
+	mul
+	3 -1 roll
+	add
+} bind def
+/Mlprun2 {
+	2 copy
+	add 2 div
+	3 1 roll
+	exch sub
+} bind def
+/Mlpminmax {
+	cvx
+	2 index
+	6 index
+	2 index
+	exec
+	{
+	7 -3 roll
+	4 -1 roll
+	} if
+	1 index
+	5 index
+	3 -1 roll
+	exec
+	{
+	4 1 roll
+	pop
+	5 -1 roll
+	aload
+	pop pop
+	4 -1 roll
+	aload pop
+	[
+	8 -2 roll
+	pop
+	5 -2 roll
+	pop
+	6 -2 roll
+	pop
+	5 -1 roll
+	]
+	4 1 roll
+	pop
+	}
+	{
+	pop pop pop
+	} ifelse
+} bind def
+/Mlp1 {
+	5 index
+	3 index	sub
+	5 index
+	2 index mul
+	1 index
+	le
+	1 index
+	0 le
+	or
+	dup
+	not
+	{
+	1 index
+	3 index	div
+	.99999 mul
+	8 -1 roll
+	pop
+	7 1 roll
+	}
+	if
+	8 -1 roll
+	2 div
+	7 -2 roll
+	pop sub
+	5 index
+	6 -3 roll
+	pop pop
+	mul sub
+	exch
+} bind def
+/intop 0 def
+/inrht 0 def
+/inflag 0 def
+/outflag 0 def
+/xadrht 0 def
+/xadlft 0 def
+/yadtop 0 def
+/yadbot 0 def
+/Minner {
+	outflag
+	1
+	eq
+	{
+	/outflag 0 def
+	/intop 0 def
+	/inrht 0 def
+	} if
+	5 index
+	gsave
+	Mtmatrix setmatrix
+	Mvboxa pop
+	grestore
+	3 -1 roll
+	pop
+	dup
+	intop
+	gt
+	{
+	/intop
+	exch def
+	}
+	{ pop }
+	ifelse
+	dup
+	inrht
+	gt
+	{
+	/inrht
+	exch def
+	}
+	{ pop }
+	ifelse
+	pop
+	/inflag
+	1 def
+} bind def
+/Mouter {
+	/xadrht 0 def
+	/xadlft 0 def
+	/yadtop 0 def
+	/yadbot 0 def
+	inflag
+	1 eq
+	{
+	dup
+	0 lt
+	{
+	dup
+	intop
+	mul
+	neg
+	/yadtop
+	exch def
+	} if
+	dup
+	0 gt
+	{
+	dup
+	intop
+	mul
+	/yadbot
+	exch def
+	}
+	if
+	pop
+	dup
+	0 lt
+	{
+	dup
+	inrht
+	mul
+	neg
+	/xadrht
+	exch def
+	} if
+	dup
+	0 gt
+	{
+	dup
+	inrht
+	mul
+	/xadlft
+	exch def
+	} if
+	pop
+	/outflag 1 def
+	}
+	{ pop pop}
+	ifelse
+	/inflag 0 def
+	/inrht 0 def
+	/intop 0 def
+} bind def
+/Mboxout {
+	outflag
+	1
+	eq
+	{
+	4 -1
+	roll
+	xadlft
+	leadjust
+	add
+	sub
+	4 1 roll
+	3 -1
+	roll
+	yadbot
+	leadjust
+	add
+	sub
+	3 1
+	roll
+	exch
+	xadrht
+	leadjust
+	add
+	add
+	exch
+	yadtop
+	leadjust
+	add
+	add
+	/outflag 0 def
+	/xadlft 0 def
+	/yadbot 0 def
+	/xadrht 0 def
+	/yadtop 0 def
+	} if
+} bind def
+/leadjust {
+	(m) stringwidth pop
+	.5 mul
+} bind def
+/Mrotcheck {
+	dup
+	90
+	eq
+	{
+	yadbot
+	/yadbot
+	xadrht
+	def
+	/xadrht
+	yadtop
+	def
+	/yadtop
+	xadlft
+	def
+	/xadlft
+	exch
+	def
+	}
+	if
+	dup
+	cos
+	1 index
+	sin
+	Checkaux
+	dup
+	cos
+	1 index
+	sin neg
+	exch
+	Checkaux
+	3 1 roll
+	pop pop
+} bind def
+/Checkaux {
+	4 index
+	exch
+	4 index
+	mul
+	3 1 roll
+	mul add
+	4 1 roll
+} bind def
+/Mboxrot {
+	Mrot
+	90 eq
+	{
+	brotaux
+	4 2
+	roll
+	}
+	if
+	Mrot
+	180 eq
+	{
+	4 2
+        roll
+	brotaux
+	4 2
+	roll
+	brotaux
+	}
+	if
+	Mrot
+	270 eq
+	{
+	4 2
+	roll
+	brotaux
+	}
+	if
+} bind def
+/brotaux {
+	neg
+	exch
+	neg
+} bind def
+/Mabsproc {
+        0
+        matrix defaultmatrix
+        dtransform idtransform
+        dup mul exch
+        dup mul
+        add sqrt
+} bind def
+/Mabswid {
+        Mabsproc
+        setlinewidth
+} bind def
+/Mabsdash {
+        exch
+        [
+        exch
+        {
+        Mabsproc
+        }
+        forall
+        ]
+        exch
+        setdash
+} bind def
+/MBeginOrig { Momatrix concat} bind def
+/MEndOrig { Mgmatrix setmatrix} bind def
+/sampledsound where
+{ pop}
+{ /sampledsound {
+exch
+pop
+exch
+5 1 roll
+mul
+4 idiv
+mul
+2 idiv
+exch pop
+exch
+/Mtempproc exch def
+{ Mtempproc pop }
+repeat
+} bind def
+} ifelse
+
+/MFill {
+	0 0 		moveto
+	Mwidth 0 	lineto
+	Mwidth Mheight 	lineto
+	0 Mheight 	lineto
+	fill
+} bind def
+
+/MPlotRegion {
+	3 index
+	Mwidth mul
+	2 index
+	Mheight mul
+	translate
+	exch sub
+	Mheight mul
+	/Mheight
+	exch def
+	exch sub
+	Mwidth mul
+	/Mwidth
+	exch def
+} bind def
+
+/Mcharproc
+{
+  	currentfile
+  	(x)
+  	readhexstring
+  	pop
+  	0 get
+  	exch
+ 	div
+} bind def
+
+/Mshadeproc
+{
+	dup
+	3 1
+	roll
+	{
+	dup
+	Mcharproc
+	3 1
+	roll
+	} repeat
+	1 eq
+	{
+	setgray
+	}
+	{
+	3 eq
+	{
+	setrgbcolor
+	}
+	{
+	setcmykcolor
+	} ifelse
+	} ifelse
+} bind def
+
+/Mrectproc
+{
+	3 index
+	2 index
+	moveto
+	2 index
+	3 -1
+	roll
+	lineto
+	dup
+	3 1
+	roll
+	lineto
+	lineto
+	fill
+} bind def
+
+/_Mcolorimage
+{
+	7 1
+	roll
+	pop
+	pop
+	matrix
+	invertmatrix
+	concat
+	2 exch exp
+	1 sub
+	3 1 roll
+	1 1
+	2 index
+	{
+	1 1
+	4 index
+	{
+	dup
+	1 sub
+	exch
+	2 index
+	dup
+	1 sub
+	exch
+	7 index
+	9 index
+	Mshadeproc
+	Mrectproc
+	} for
+	pop
+	} for
+	pop pop pop pop
+} bind def
+
+/_Mimage
+{
+	pop
+	matrix
+	invertmatrix
+	concat
+	2 exch exp
+	1 sub
+	3 1 roll
+	1 1
+	2 index
+	{
+	1 1
+	4 index
+	{
+	dup
+	1 sub 
+	exch
+	2 index
+	dup
+	1 sub
+	exch
+	7 index
+	Mcharproc
+	setgray
+	Mrectproc
+	} for
+	pop
+	} for
+	pop pop pop
+} bind def
+
+/Mimage {
+	4 index
+	4 index
+	mul 1600 gt
+	{ image }
+	{ _Mimage }
+	ifelse
+} def
+
+/Mcolorimage {
+	6 index
+	6 index
+	mul 1600 gt
+	{ colorimage }
+	{ _Mcolorimage }
+	ifelse
+} def
+
+/g { setgray} bind def
+/k { setcmykcolor} bind def
+/p { gsave} bind def
+/r { setrgbcolor} bind def
+/w { setlinewidth} bind def
+/C { curveto} bind def
+/F { fill} bind def
+/L { lineto} bind def
+/rL { rlineto} bind def
+/P { grestore} bind def
+/s { stroke} bind def
+/S { show} bind def
+/N {currentpoint 3 -1 roll show moveto} bind def
+/Msf { findfont exch scalefont [1 0 0 -1 0 0 ] makefont setfont} bind def
+/m { moveto} bind def
+/Mr { rmoveto} bind def
+/Mx {currentpoint exch pop moveto} bind def
+/My {currentpoint pop exch moveto} bind def
+/X {0 rmoveto} bind def
+/Y {0 exch rmoveto} bind def
+gsave
+newpath
+ 98.625 229.000 moveto
+ 320.938 229.000 lineto
+ 320.938 6.688 lineto
+ 98.625 6.688 lineto
+ 98.625 229.000 lineto
+closepath
+clip newpath
+grestore
+/pp_save save def /showpage {} def
+
+gsave
+/MacintoshRomanEncoding [
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quotesingle
+	/parenleft/parenright/asterisk/plus/comma/hyphen/period/slash
+	/zero/one/two/three/four/five/six/seven
+	/eight/nine/colon/semicolon/less/equal/greater/question
+	/at/A/B/C/D/E/F/G
+	/H/I/J/K/L/M/N/O
+	/P/Q/R/S/T/U/V/W
+	/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore
+	/grave/a/b/c/d/e/f/g
+	/h/i/j/k/l/m/n/o
+	/p/q/r/s/t/u/v/w
+	/x/y/z/braceleft/bar/braceright/asciitilde/.notdef
+	/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis/Udieresis/aacute
+	/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute/egrave
+	/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde/oacute
+	/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex/udieresis
+	/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+	/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash
+	/.notdef/plusminus/.notdef/.notdef/yen/.notdef/.notdef/.notdef
+	/.notdef/.notdef/.notdef/ordfeminine/ring/.notdef/ae/oslash
+	/questiondown/exclamdown/logicalnot/.notdef/florin/.notdef/.notdef/guillemotleft
+	/guillemotright/ellipsis/.notdef/Agrave/Atilde/Otilde/OE/oe
+	/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide/.notdef
+	/ydieresis/Ydieresis/.notdef/currency/guilsinglleft/guilsinglright/.notdef/.notdef
+	/daggerdbl/dotaccent/quotesinglbase/quotedblbase/perthousand/Acircumflex/Ecircumflex/Aacute
+	/Edieresis/Egrave/Iacute/Icircumflex/Idieresis/Igrave/Oacute/Ocircumflex
+	/.notdef/Ograve/Uacute/Ucircumflex/Ugrave/dotlessi/circumflex/tilde
+	/macron/.notdef/.notdef/.notdef/ogonek/.notdef/.notdef/.notdef
+] def
+/WindowsANSIEncoding [
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+	/space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quotesingle
+	/parenleft/parenright/asterisk/plus/comma/hyphen/period/slash
+	/zero/one/two/three/four/five/six/seven
+	/eight/nine/colon/semicolon/less/equal/greater/question
+	/at/A/B/C/D/E/F/G
+	/H/I/J/K/L/M/N/O
+	/P/Q/R/S/T/U/V/W
+	/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore
+	/grave/a/b/c/d/e/f/g
+	/h/i/j/k/l/m/n/o
+	/p/q/r/s/t/u/v/w
+	/x/y/z/braceleft/bar/braceright/asciitilde/.notdef
+	/.notdef/.notdef/quotesinglbase/florin/quotedblbase/ellipsis/dagger/daggerdbl
+	/circumflex/perthousand/Scaron/guilsinglleft/OE/.notdef/Zcaron/.notdef
+	/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet/endash/emdash
+	/tilde/trademark/scaron/guilsinglright/oe/.notdef/zcaron/Ydieresis
+	/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section
+	/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered/macron
+	/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph/dotaccent
+	/ogonek/onesuperior/ring/guillemotright/onequarter/onehalf/threequarters/questiondown
+	/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+	/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+	/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply
+	/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+	/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla
+	/egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis
+	/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide
+	/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis
+] def
+/Mnodistort true def
+1.000000 1.000000 scale
+91.562500 233.562500 translate
+1.000000 -1.000000 scale
+-0.000000 -0.000000 translate
+/Mleft		0.000000 def
+/Mbottom	0.000000 def
+/Mwidth		230.375000 def
+/Mheight	230.375000 def
+0 setgray
+0 setlinewidth
+/Courier findfont 12 scalefont setfont
+/Mfontsize 12 def
+/Plain /Courier findfont def
+
+%!
+%%Creator: Mathematica
+%%AspectRatio: 1 
+MathPictureStart
+/Mabs {
+Mgmatrix idtransform
+Mtmatrix dtransform
+} bind def
+/Mabsadd { Mabs
+3 -1 roll add
+3 1 roll add
+exch } bind def
+%% Graphics
+%%IncludeResource: font Courier
+%%IncludeFont: Courier
+/Courier findfont 10  scalefont  setfont
+% Scaling calculations
+0.0238095 0.190476 0.5 0.106479 [
+[.21429 .4875 -3 -9 ]
+[.21429 .4875 3 0 ]
+[.40476 .4875 -3 -9 ]
+[.40476 .4875 3 0 ]
+[.59524 .4875 -3 -9 ]
+[.59524 .4875 3 0 ]
+[.78571 .4875 -3 -9 ]
+[.78571 .4875 3 0 ]
+[.97619 .4875 -3 -9 ]
+[.97619 .4875 3 0 ]
+[.01131 .07408 -12 -4.5 ]
+[.01131 .07408 0 4.5 ]
+[.01131 .28704 -12 -4.5 ]
+[.01131 .28704 0 4.5 ]
+[.01131 .71296 -6 -4.5 ]
+[.01131 .71296 0 4.5 ]
+[.01131 .92592 -6 -4.5 ]
+[.01131 .92592 0 4.5 ]
+[ 0 0 0 0 ]
+[ 1 1 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+0 g
+.25 Mabswid
+[ ] 0 setdash
+.21429 .5 m
+.21429 .50625 L
+s
+[(1)] .21429 .4875 0 1 Mshowa
+.40476 .5 m
+.40476 .50625 L
+s
+[(2)] .40476 .4875 0 1 Mshowa
+.59524 .5 m
+.59524 .50625 L
+s
+[(3)] .59524 .4875 0 1 Mshowa
+.78571 .5 m
+.78571 .50625 L
+s
+[(4)] .78571 .4875 0 1 Mshowa
+.97619 .5 m
+.97619 .50625 L
+s
+[(5)] .97619 .4875 0 1 Mshowa
+.125 Mabswid
+.0619 .5 m
+.0619 .50375 L
+s
+.1 .5 m
+.1 .50375 L
+s
+.1381 .5 m
+.1381 .50375 L
+s
+.17619 .5 m
+.17619 .50375 L
+s
+.25238 .5 m
+.25238 .50375 L
+s
+.29048 .5 m
+.29048 .50375 L
+s
+.32857 .5 m
+.32857 .50375 L
+s
+.36667 .5 m
+.36667 .50375 L
+s
+.44286 .5 m
+.44286 .50375 L
+s
+.48095 .5 m
+.48095 .50375 L
+s
+.51905 .5 m
+.51905 .50375 L
+s
+.55714 .5 m
+.55714 .50375 L
+s
+.63333 .5 m
+.63333 .50375 L
+s
+.67143 .5 m
+.67143 .50375 L
+s
+.70952 .5 m
+.70952 .50375 L
+s
+.74762 .5 m
+.74762 .50375 L
+s
+.82381 .5 m
+.82381 .50375 L
+s
+.8619 .5 m
+.8619 .50375 L
+s
+.9 .5 m
+.9 .50375 L
+s
+.9381 .5 m
+.9381 .50375 L
+s
+.25 Mabswid
+0 .5 m
+1 .5 L
+s
+.02381 .07408 m
+.03006 .07408 L
+s
+[(-4)] .01131 .07408 1 0 Mshowa
+.02381 .28704 m
+.03006 .28704 L
+s
+[(-2)] .01131 .28704 1 0 Mshowa
+.02381 .71296 m
+.03006 .71296 L
+s
+[(2)] .01131 .71296 1 0 Mshowa
+.02381 .92592 m
+.03006 .92592 L
+s
+[(4)] .01131 .92592 1 0 Mshowa
+.125 Mabswid
+.02381 .12732 m
+.02756 .12732 L
+s
+.02381 .18056 m
+.02756 .18056 L
+s
+.02381 .2338 m
+.02756 .2338 L
+s
+.02381 .34028 m
+.02756 .34028 L
+s
+.02381 .39352 m
+.02756 .39352 L
+s
+.02381 .44676 m
+.02756 .44676 L
+s
+.02381 .55324 m
+.02756 .55324 L
+s
+.02381 .60648 m
+.02756 .60648 L
+s
+.02381 .65972 m
+.02756 .65972 L
+s
+.02381 .7662 m
+.02756 .7662 L
+s
+.02381 .81944 m
+.02756 .81944 L
+s
+.02381 .87268 m
+.02756 .87268 L
+s
+.02381 .02084 m
+.02756 .02084 L
+s
+.02381 .97916 m
+.02756 .97916 L
+s
+.25 Mabswid
+.02381 0 m
+.02381 1 L
+s
+0 0 m
+1 0 L
+1 1 L
+0 1 L
+closepath
+clip
+newpath
+.5 Mabswid
+.02381 .50005 m
+.02499 .50837 L
+.02605 .51156 L
+.02846 .51663 L
+.03279 .52311 L
+.03784 .5289 L
+.04262 .53346 L
+.06244 .54796 L
+.08265 .55918 L
+.10458 .56934 L
+.14545 .58509 L
+.1848 .59789 L
+.22263 .60879 L
+.26292 .6193 L
+.30169 .62861 L
+.34292 .63782 L
+.38262 .64614 L
+.42082 .65373 L
+.46146 .6614 L
+.50059 .66846 L
+.54217 .67566 L
+.58224 .68232 L
+.62079 .68851 L
+.6618 .69487 L
+.70128 .70081 L
+.73925 .70636 L
+.77968 .71211 L
+.81859 .7175 L
+.85995 .72309 L
+.89979 .72835 L
+.93812 .73329 L
+.97619 .7381 L
+s
+.02381 .49995 m
+.02499 .49163 L
+.02605 .48844 L
+.02846 .48337 L
+.03279 .47689 L
+.03784 .4711 L
+.04262 .46654 L
+.06244 .45204 L
+.08265 .44082 L
+.10458 .43066 L
+.14545 .41491 L
+.1848 .40211 L
+.22263 .39121 L
+.26292 .3807 L
+.30169 .37139 L
+.34292 .36218 L
+.38262 .35386 L
+.42082 .34627 L
+.46146 .3386 L
+.50059 .33154 L
+.54217 .32434 L
+.58224 .31768 L
+.62079 .31149 L
+.6618 .30513 L
+.70128 .29919 L
+.73925 .29364 L
+.77968 .28789 L
+.81859 .2825 L
+.85995 .27691 L
+.89979 .27165 L
+.93812 .26671 L
+.97619 .2619 L
+s
+.02381 .50007 m
+.02499 .51183 L
+.02605 .51635 L
+.02846 .52352 L
+.03279 .53269 L
+.03784 .54087 L
+.04262 .54732 L
+.06244 .56782 L
+.08265 .58369 L
+.10458 .59806 L
+.14545 .62034 L
+.1848 .63844 L
+.22263 .65385 L
+.26292 .66872 L
+.30169 .68188 L
+.34292 .69491 L
+.38262 .70668 L
+.42082 .7174 L
+.46146 .72826 L
+.50059 .73824 L
+.54217 .74842 L
+.58224 .75784 L
+.62079 .76659 L
+.6618 .77559 L
+.70128 .78399 L
+.73925 .79184 L
+.77968 .79997 L
+.81859 .8076 L
+.85995 .8155 L
+.89979 .82293 L
+.93812 .82992 L
+.97619 .83672 L
+s
+.02381 .49993 m
+.02499 .48817 L
+.02605 .48365 L
+.02846 .47648 L
+.03279 .46731 L
+.03784 .45913 L
+.04262 .45268 L
+.06244 .43218 L
+.08265 .41631 L
+.10458 .40194 L
+.14545 .37966 L
+.1848 .36156 L
+.22263 .34615 L
+.26292 .33128 L
+.30169 .31812 L
+.34292 .30509 L
+.38262 .29332 L
+.42082 .2826 L
+.46146 .27174 L
+.50059 .26176 L
+.54217 .25158 L
+.58224 .24216 L
+.62079 .23341 L
+.6618 .22441 L
+.70128 .21601 L
+.73925 .20816 L
+.77968 .20003 L
+.81859 .1924 L
+.85995 .1845 L
+.89979 .17707 L
+.93812 .17008 L
+.97619 .16328 L
+s
+.02381 .50008 m
+.02499 .51449 L
+.02605 .52002 L
+.02846 .52881 L
+.03279 .54004 L
+.03784 .55005 L
+.04262 .55795 L
+.06244 .58306 L
+.08265 .6025 L
+.10458 .6201 L
+.14545 .64738 L
+.1848 .66955 L
+.22263 .68843 L
+.26292 .70664 L
+.30169 .72276 L
+.34292 .73871 L
+.38262 .75313 L
+.42082 .76626 L
+.46146 .77956 L
+.50059 .79179 L
+.54217 .80425 L
+.58224 .81578 L
+.62079 .8265 L
+.6618 .83753 L
+.70128 .84782 L
+.73925 .85743 L
+.77968 .86739 L
+.81859 .87673 L
+.85995 .88641 L
+.89979 .89551 L
+.93812 .90407 L
+.97619 .91239 L
+s
+.02381 .49992 m
+.02499 .48551 L
+.02605 .47998 L
+.02846 .47119 L
+.03279 .45996 L
+.03784 .44995 L
+.04262 .44205 L
+.06244 .41694 L
+.08265 .3975 L
+.10458 .3799 L
+.14545 .35262 L
+.1848 .33045 L
+.22263 .31157 L
+.26292 .29336 L
+.30169 .27724 L
+.34292 .26129 L
+.38262 .24687 L
+.42082 .23374 L
+.46146 .22044 L
+.50059 .20821 L
+.54217 .19575 L
+.58224 .18422 L
+.62079 .1735 L
+.6618 .16247 L
+.70128 .15218 L
+.73925 .14257 L
+.77968 .13261 L
+.81859 .12327 L
+.85995 .11359 L
+.89979 .10449 L
+.93812 .09593 L
+.97619 .08761 L
+s
+.02381 .5001 m
+.02499 .51673 L
+.02605 .52312 L
+.02846 .53326 L
+.03279 .54623 L
+.03784 .5578 L
+.04262 .56692 L
+.06244 .59591 L
+.08265 .61836 L
+.10458 .63868 L
+.14545 .67018 L
+.1848 .69578 L
+.22263 .71757 L
+.26292 .7386 L
+.30169 .75722 L
+.34292 .77564 L
+.38262 .79229 L
+.42082 .80745 L
+.46146 .82281 L
+.50059 .83693 L
+.54217 .85131 L
+.58224 .86464 L
+.62079 .87701 L
+.6618 .88975 L
+.70128 .90163 L
+.73925 .91273 L
+.77968 .92423 L
+.81859 .93501 L
+.85995 .94618 L
+.89979 .95669 L
+.93812 .96658 L
+.97619 .97619 L
+s
+.02381 .4999 m
+.02499 .48327 L
+.02605 .47688 L
+.02846 .46674 L
+.03279 .45377 L
+.03784 .4422 L
+.04262 .43308 L
+.06244 .40409 L
+.08265 .38164 L
+.10458 .36132 L
+.14545 .32982 L
+.1848 .30422 L
+.22263 .28243 L
+.26292 .2614 L
+.30169 .24278 L
+.34292 .22436 L
+.38262 .20771 L
+.42082 .19255 L
+.46146 .17719 L
+.50059 .16307 L
+.54217 .14869 L
+.58224 .13536 L
+.62079 .12299 L
+.6618 .11025 L
+.70128 .09837 L
+.73925 .08727 L
+.77968 .07577 L
+.81859 .06499 L
+.85995 .05382 L
+.89979 .04331 L
+.93812 .03342 L
+.97619 .02381 L
+s
+% End of Graphics
+MathPictureEnd
+
+%%PSTrailer
+grestore
+
+
+%%EPS Trailer
+
+pp_save restore
+
+end
+%%Trailer
+%%EOF
+
+cleartomark
+countdictstack exch sub { end } repeat
+restore grestore
+%
+% End Imported PIC File: /home/goerbig/Teaching/LesHouches2009/LectureNotes/RelLL.eps
+%%EndDocument
+%
+% Polyline
+0 slj
+0 slc
+15.000 slw
+n -6000 1635 m -6000 8865 l
+ 1215 8865 l gs col0 s gr 
+% Polyline
+n -6000 8850 m
+ 450 8025 l gs col0 s gr 
+% Polyline
+n -6000 8850 m
+ 450 6225 l gs col0 s gr 
+% Polyline
+n -6000 8850 m
+ 450 4500 l gs col0 s gr 
+% Polyline
+n -6000 8850 m
+ 675 2475 l gs col0 s gr 
+% Polyline
+n -6000 8850 m
+ -225 1725 l gs col0 s gr 
+/Helvetica-iso ff 500.00 scf sf
+-7125 2025 m
+gs 1 -1 sc (\(a\)) col0 sh gr
+/Helvetica-iso ff 500.00 scf sf
+1050 2025 m
+gs 1 -1 sc (\(b\)) col0 sh gr
+% here ends figure;
+% 
+% here starts figure with depth 45
+% Polyline
+0 slj
+0 slc
+0.000 slw
+n 3420 5370 m 9255 5370 l 9255 5835 l 3420 5835 l
+ cp gs col7 1.00 shd ef gr 
+% Polyline
+n 2175 1785 m 1680 1785 l 1680 8850 l 2175 8850 l
+ cp gs col7 1.00 shd ef gr 
+% here ends figure;
+% 
+% here starts figure with depth 40
+% Polyline
+0 slj
+0 slc
+15.000 slw
+n 2115 5325 m
+ 1905 5325 l gs col7 1.00 shd ef gr gs col0 s gr 
+% Polyline
+0.000 slw
+n 10260 8085 m
+ 10260 8640 l gs col7 1.00 shd ef gr 
+% Polyline
+n 1380 4695 m
+ 1380 5700 l gs col7 1.00 shd ef gr 
+/Times-Roman-iso ff 416.67 scf sf
+9315 5430 m
+gs 1 -1 sc (n=0) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+1620 5460 m
+gs 1 -1 sc (0) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+7830 5760 m
+gs 1 -1 sc (B) col0 sh gr
+/Helvetica-iso ff 416.67 scf sf
+1995 4020 m
+gs 1 -1 sc  90.0 rot (energy) col0 sh gr
+/Helvetica-iso ff 416.67 scf sf
+4890 5775 m
+gs 1 -1 sc (magnetic field) col0 sh gr
+/Helvetica-iso ff 416.67 scf sf
+-6345 5670 m
+gs 1 -1 sc  90.0 rot (energy) col0 sh gr
+/Helvetica-iso ff 416.67 scf sf
+-3990 9495 m
+gs 1 -1 sc (magnetic field) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+-1050 9510 m
+gs 1 -1 sc (B) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+75 8475 m
+gs 1 -1 sc (n=0) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+75 6825 m
+gs 1 -1 sc (n=1) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+150 5100 m
+gs 1 -1 sc (n=2) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+150 3375 m
+gs 1 -1 sc (n=3) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+-375 2325 m
+gs 1 -1 sc (n=4) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9345 2010 m
+gs 1 -1 sc (+,n=4) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9345 2490 m
+gs 1 -1 sc (+,n=3) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9360 3000 m
+gs 1 -1 sc (+,n=2) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9345 3765 m
+gs 1 -1 sc (+,n=1) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9315 7155 m
+gs 1 -1 sc (-,n=1) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9330 7860 m
+gs 1 -1 sc (-,n=2) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9345 8415 m
+gs 1 -1 sc (-,n=3) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+9360 8850 m
+gs 1 -1 sc (-,n=4) col0 sh gr
+% here ends figure;
+pagefooter
+showpage
+%%Trailer
+%EOF

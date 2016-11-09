@@ -1,0 +1,1120 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: EdgeStatesIQHE.fig
+%%Creator: fig2dev Version 3.2 Patchlevel 5
+%%CreationDate: Fri Aug 28 15:42:42 2009
+%%For: goerbig@skyrmion (goerbig,,,)
+%%BoundingBox: 0 0 1166 316
+%Magnification: 1.0000
+%%EndComments
+%%BeginProlog
+/MyAppDict 100 dict dup begin def
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+/col32 {0.537 0.537 0.537 srgb} bind def
+/col33 {0.000 0.000 0.000 srgb} bind def
+/col34 {0.000 0.000 0.000 srgb} bind def
+/col35 {0.682 0.682 0.682 srgb} bind def
+/col36 {0.482 0.482 0.482 srgb} bind def
+/col37 {0.000 0.000 0.000 srgb} bind def
+
+end
+
+% This junk string is used by the show operators
+/PATsstr 1 string def
+/PATawidthshow { 	% cx cy cchar rx ry string
+  % Loop over each character in the string
+  {  % cx cy cchar rx ry char
+    % Show the character
+    dup				% cx cy cchar rx ry char char
+    PATsstr dup 0 4 -1 roll put	% cx cy cchar rx ry char (char)
+    false charpath		% cx cy cchar rx ry char
+    /clip load PATdraw
+    % Move past the character (charpath modified the
+    % current point)
+    currentpoint			% cx cy cchar rx ry char x y
+    newpath
+    moveto			% cx cy cchar rx ry char
+    % Reposition by cx,cy if the character in the string is cchar
+    3 index eq {			% cx cy cchar rx ry
+      4 index 4 index rmoveto
+    } if
+    % Reposition all characters by rx ry
+    2 copy rmoveto		% cx cy cchar rx ry
+  } forall
+  pop pop pop pop pop		% -
+  currentpoint
+  newpath
+  moveto
+} bind def
+/PATcg {
+  7 dict dup begin
+    /lw currentlinewidth def
+    /lc currentlinecap def
+    /lj currentlinejoin def
+    /ml currentmiterlimit def
+    /ds [ currentdash ] def
+    /cc [ currentrgbcolor ] def
+    /cm matrix currentmatrix def
+  end
+} bind def
+% PATdraw - calculates the boundaries of the object and
+% fills it with the current pattern
+/PATdraw {			% proc
+  save exch
+    PATpcalc			% proc nw nh px py
+    5 -1 roll exec		% nw nh px py
+    newpath
+    PATfill			% -
+  restore
+} bind def
+% PATfill - performs the tiling for the shape
+/PATfill { % nw nh px py PATfill -
+  PATDict /CurrentPattern get dup begin
+    setfont
+    % Set the coordinate system to Pattern Space
+    PatternGState PATsg
+    % Set the color for uncolored pattezns
+    PaintType 2 eq { PATDict /PColor get PATsc } if
+    % Create the string for showing
+    3 index string		% nw nh px py str
+    % Loop for each of the pattern sources
+    0 1 Multi 1 sub {		% nw nh px py str source
+	% Move to the starting location
+	3 index 3 index		% nw nh px py str source px py
+	moveto			% nw nh px py str source
+	% For multiple sources, set the appropriate color
+	Multi 1 ne { dup PC exch get PATsc } if
+	% Set the appropriate string for the source
+	0 1 7 index 1 sub { 2 index exch 2 index put } for pop
+	% Loop over the number of vertical cells
+	3 index 		% nw nh px py str nh
+	{			% nw nh px py str
+	  currentpoint		% nw nh px py str cx cy
+	  2 index oldshow	% nw nh px py str cx cy
+	  YStep add moveto	% nw nh px py str
+	} repeat		% nw nh px py str
+    } for
+    5 { pop } repeat
+  end
+} bind def
+
+% PATkshow - kshow with the current pattezn
+/PATkshow {			% proc string
+  exch bind			% string proc
+  1 index 0 get			% string proc char
+  % Loop over all but the last character in the string
+  0 1 4 index length 2 sub {
+				% string proc char idx
+    % Find the n+1th character in the string
+    3 index exch 1 add get	% string proc char char+1
+    exch 2 copy			% strinq proc char+1 char char+1 char
+    % Now show the nth character
+    PATsstr dup 0 4 -1 roll put	% string proc chr+1 chr chr+1 (chr)
+    false charpath		% string proc char+1 char char+1
+    /clip load PATdraw
+    % Move past the character (charpath modified the current point)
+    currentpoint newpath moveto
+    % Execute the user proc (should consume char and char+1)
+    mark 3 1 roll		% string proc char+1 mark char char+1
+    4 index exec		% string proc char+1 mark...
+    cleartomark			% string proc char+1
+  } for
+  % Now display the last character
+  PATsstr dup 0 4 -1 roll put	% string proc (char+1)
+  false charpath		% string proc
+  /clip load PATdraw
+  neewath
+  pop pop			% -
+} bind def
+% PATmp - the makepattern equivalent
+/PATmp {			% patdict patmtx PATmp patinstance
+  exch dup length 7 add		% We will add 6 new entries plus 1 FID
+  dict copy			% Create a new dictionary
+  begin
+    % Matrix to install when painting the pattern
+    TilingType PATtcalc
+    /PatternGState PATcg def
+    PatternGState /cm 3 -1 roll put
+    % Check for multi pattern sources (Level 1 fast color patterns)
+    currentdict /Multi known not { /Multi 1 def } if
+    % Font dictionary definitions
+    /FontType 3 def
+    % Create a dummy encoding vector
+    /Encoding 256 array def
+    3 string 0 1 255 {
+      Encoding exch dup 3 index cvs cvn put } for pop
+    /FontMatrix matrix def
+    /FontBBox BBox def
+    /BuildChar {
+	mark 3 1 roll		% mark dict char
+	exch begin
+	Multi 1 ne {PaintData exch get}{pop} ifelse  % mark [paintdata]
+	  PaintType 2 eq Multi 1 ne or
+	  { XStep 0 FontBBox aload pop setcachedevice }
+	  { XStep 0 setcharwidth } ifelse
+	  currentdict		% mark [paintdata] dict
+	  /PaintProc load	% mark [paintdata] dict paintproc
+	end
+	gsave
+	  false PATredef exec true PATredef
+	grestore
+	cleartomark		% -
+    } bind def
+    currentdict
+  end				% newdict
+  /foo exch			% /foo newlict
+  definefont			% newfont
+} bind def
+% PATpcalc - calculates the starting point and width/height
+% of the tile fill for the shape
+/PATpcalc {	% - PATpcalc nw nh px py
+  PATDict /CurrentPattern get begin
+    gsave
+	% Set up the coordinate system to Pattern Space
+	% and lock down pattern
+	PatternGState /cm get setmatrix
+	BBox aload pop pop pop translate
+	% Determine the bounding box of the shape
+	pathbbox			% llx lly urx ury
+    grestore
+    % Determine (nw, nh) the # of cells to paint width and height
+    PatHeight div ceiling		% llx lly urx qh
+    4 1 roll				% qh llx lly urx
+    PatWidth div ceiling		% qh llx lly qw
+    4 1 roll				% qw qh llx lly
+    PatHeight div floor			% qw qh llx ph
+    4 1 roll				% ph qw qh llx
+    PatWidth div floor			% ph qw qh pw
+    4 1 roll				% pw ph qw qh
+    2 index sub cvi abs			% pw ph qs qh-ph
+    exch 3 index sub cvi abs exch	% pw ph nw=qw-pw nh=qh-ph
+    % Determine the starting point of the pattern fill
+    %(px, py)
+    4 2 roll				% nw nh pw ph
+    PatHeight mul			% nw nh pw py
+    exch				% nw nh py pw
+    PatWidth mul exch			% nw nh px py
+  end
+} bind def
+
+% Save the original routines so that we can use them later on
+/oldfill	/fill load def
+/oldeofill	/eofill load def
+/oldstroke	/stroke load def
+/oldshow	/show load def
+/oldashow	/ashow load def
+/oldwidthshow	/widthshow load def
+/oldawidthshow	/awidthshow load def
+/oldkshow	/kshow load def
+
+% These defs are necessary so that subsequent procs don't bind in
+% the originals
+/fill	   { oldfill } bind def
+/eofill	   { oldeofill } bind def
+/stroke	   { oldstroke } bind def
+/show	   { oldshow } bind def
+/ashow	   { oldashow } bind def
+/widthshow { oldwidthshow } bind def
+/awidthshow { oldawidthshow } bind def
+/kshow 	   { oldkshow } bind def
+/PATredef {
+  MyAppDict begin
+    {
+    /fill { /clip load PATdraw newpath } bind def
+    /eofill { /eoclip load PATdraw newpath } bind def
+    /stroke { PATstroke } bind def
+    /show { 0 0 null 0 0 6 -1 roll PATawidthshow } bind def
+    /ashow { 0 0 null 6 3 roll PATawidthshow }
+    bind def
+    /widthshow { 0 0 3 -1 roll PATawidthshow }
+    bind def
+    /awidthshow { PATawidthshow } bind def
+    /kshow { PATkshow } bind def
+  } {
+    /fill   { oldfill } bind def
+    /eofill { oldeofill } bind def
+    /stroke { oldstroke } bind def
+    /show   { oldshow } bind def
+    /ashow  { oldashow } bind def
+    /widthshow { oldwidthshow } bind def
+    /awidthshow { oldawidthshow } bind def
+    /kshow  { oldkshow } bind def
+    } ifelse
+  end
+} bind def
+false PATredef
+% Conditionally define setcmykcolor if not available
+/setcmykcolor where { pop } {
+  /setcmykcolor {
+    1 sub 4 1 roll
+    3 {
+	3 index add neg dup 0 lt { pop 0 } if 3 1 roll
+    } repeat
+    setrgbcolor - pop
+  } bind def
+} ifelse
+/PATsc {		% colorarray
+  aload length		% c1 ... cn length
+    dup 1 eq { pop setgray } { 3 eq { setrgbcolor } { setcmykcolor
+  } ifelse } ifelse
+} bind def
+/PATsg {		% dict
+  begin
+    lw setlinewidth
+    lc setlinecap
+    lj setlinejoin
+    ml setmiterlimit
+    ds aload pop setdash
+    cc aload pop setrgbcolor
+    cm setmatrix
+  end
+} bind def
+
+/PATDict 3 dict def
+/PATsp {
+  true PATredef
+  PATDict begin
+    /CurrentPattern exch def
+    % If it's an uncolored pattern, save the color
+    CurrentPattern /PaintType get 2 eq {
+      /PColor exch def
+    } if
+    /CColor [ currentrgbcolor ] def
+  end
+} bind def
+% PATstroke - stroke with the current pattern
+/PATstroke {
+  countdictstack
+  save
+  mark
+  {
+    currentpoint strokepath moveto
+    PATpcalc				% proc nw nh px py
+    clip newpath PATfill
+    } stopped {
+	(*** PATstroke Warning: Path is too complex, stroking
+	  with gray) =
+    cleartomark
+    restore
+    countdictstack exch sub dup 0 gt
+	{ { end } repeat } { pop } ifelse
+    gsave 0.5 setgray oldstroke grestore
+  } { pop restore pop } ifelse
+  newpath
+} bind def
+/PATtcalc {		% modmtx tilingtype PATtcalc tilematrix
+  % Note: tiling types 2 and 3 are not supported
+  gsave
+    exch concat					% tilingtype
+    matrix currentmatrix exch			% cmtx tilingtype
+    % Tiling type 1 and 3: constant spacing
+    2 ne {
+	% Distort the pattern so that it occupies
+	% an integral number of device pixels
+	dup 4 get exch dup 5 get exch		% tx ty cmtx
+	XStep 0 dtransform
+	round exch round exch			% tx ty cmtx dx.x dx.y
+	XStep div exch XStep div exch		% tx ty cmtx a b
+	0 YStep dtransform
+	round exch round exch			% tx ty cmtx a b dy.x dy.y
+	YStep div exch YStep div exch		% tx ty cmtx a b c d
+	7 -3 roll astore			% { a b c d tx ty }
+    } if
+  grestore
+} bind def
+/PATusp {
+  false PATredef
+  PATDict begin
+    CColor PATsc
+  end
+} bind def
+
+% this is the pattern fill program from the Second edition Reference Manual
+% with changes to call the above pattern fill
+% left30
+11 dict begin
+/PaintType 1 def
+/PatternType 1 def
+/TilingType 1 def
+/BBox [0 0 1 1] def
+/XStep 1 def
+/YStep 1 def
+/PatWidth 1 def
+/PatHeight 1 def
+/Multi 2 def
+/PaintData [
+  { clippath } bind
+  { 32 16 true [ 32 0 0 -16 0 16 ]
+	{<c000c000300030000c000c000300030000c000c000300030
+	000c000c00030003c000c000300030000c000c0003000300
+	00c000c000300030000c000c00030003>}
+     imagemask } bind
+] def
+/PaintProc {
+	pop
+	exec fill
+} def
+currentdict
+end
+/P1 exch def
+
+% crosshatch30
+11 dict begin
+/PaintType 1 def
+/PatternType 1 def
+/TilingType 1 def
+/BBox [0 0 1 1] def
+/XStep 1 def
+/YStep 1 def
+/PatWidth 1 def
+/PatHeight 1 def
+/Multi 2 def
+/PaintData [
+  { clippath } bind
+  { 32 16 true [ 32 0 0 -16 0 16 ]
+	{<033003300c0c0c0c30033003c000c000300330030c0c0c0c
+	0330033000c000c0033003300c0c0c0c30033003c000c000
+	300330030c0c0c0c0330033000c000c0>}
+     imagemask } bind
+] def
+/PaintProc {
+	pop
+	exec fill
+} def
+currentdict
+end
+/P3 exch def
+
+% right45
+11 dict begin
+/PaintType 1 def
+/PatternType 1 def
+/TilingType 1 def
+/BBox [0 0 1 1] def
+/XStep 1 def
+/YStep 1 def
+/PatWidth 1 def
+/PatHeight 1 def
+/Multi 2 def
+/PaintData [
+  { clippath } bind
+  { 20 20 true [ 20 0 0 -20 0 20 ]
+	{<0040100080200100400200800401000802001004
+	0020080040100080200000401000802001004002
+	0080040100080200100400200800401000802000>}
+     imagemask } bind
+] def
+/PaintProc {
+	pop
+	exec fill
+} def
+currentdict
+end
+/P5 exch def
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+/reencdict 12 dict def /ReEncode { reencdict begin
+/newcodesandnames exch def /newfontname exch def /basefontname exch def
+/basefontdict basefontname findfont def /newfont basefontdict maxlength dict def
+basefontdict { exch dup /FID ne { dup /Encoding eq
+{ exch dup length array copy newfont 3 1 roll put }
+{ exch newfont 3 1 roll put } ifelse } { pop pop } ifelse } forall
+newfont /FontName newfontname put newcodesandnames aload pop
+128 1 255 { newfont /Encoding get exch /.notdef put } for
+newcodesandnames length 2 idiv { newfont /Encoding get 3 1 roll put } repeat
+newfontname newfont definefont pop end } def
+/isovec [
+8#055 /minus 8#200 /grave 8#201 /acute 8#202 /circumflex 8#203 /tilde
+8#204 /macron 8#205 /breve 8#206 /dotaccent 8#207 /dieresis
+8#210 /ring 8#211 /cedilla 8#212 /hungarumlaut 8#213 /ogonek 8#214 /caron
+8#220 /dotlessi 8#230 /oe 8#231 /OE
+8#240 /space 8#241 /exclamdown 8#242 /cent 8#243 /sterling
+8#244 /currency 8#245 /yen 8#246 /brokenbar 8#247 /section 8#250 /dieresis
+8#251 /copyright 8#252 /ordfeminine 8#253 /guillemotleft 8#254 /logicalnot
+8#255 /hyphen 8#256 /registered 8#257 /macron 8#260 /degree 8#261 /plusminus
+8#262 /twosuperior 8#263 /threesuperior 8#264 /acute 8#265 /mu 8#266 /paragraph
+8#267 /periodcentered 8#270 /cedilla 8#271 /onesuperior 8#272 /ordmasculine
+8#273 /guillemotright 8#274 /onequarter 8#275 /onehalf
+8#276 /threequarters 8#277 /questiondown 8#300 /Agrave 8#301 /Aacute
+8#302 /Acircumflex 8#303 /Atilde 8#304 /Adieresis 8#305 /Aring
+8#306 /AE 8#307 /Ccedilla 8#310 /Egrave 8#311 /Eacute
+8#312 /Ecircumflex 8#313 /Edieresis 8#314 /Igrave 8#315 /Iacute
+8#316 /Icircumflex 8#317 /Idieresis 8#320 /Eth 8#321 /Ntilde 8#322 /Ograve
+8#323 /Oacute 8#324 /Ocircumflex 8#325 /Otilde 8#326 /Odieresis 8#327 /multiply
+8#330 /Oslash 8#331 /Ugrave 8#332 /Uacute 8#333 /Ucircumflex
+8#334 /Udieresis 8#335 /Yacute 8#336 /Thorn 8#337 /germandbls 8#340 /agrave
+8#341 /aacute 8#342 /acircumflex 8#343 /atilde 8#344 /adieresis 8#345 /aring
+8#346 /ae 8#347 /ccedilla 8#350 /egrave 8#351 /eacute
+8#352 /ecircumflex 8#353 /edieresis 8#354 /igrave 8#355 /iacute
+8#356 /icircumflex 8#357 /idieresis 8#360 /eth 8#361 /ntilde 8#362 /ograve
+8#363 /oacute 8#364 /ocircumflex 8#365 /otilde 8#366 /odieresis 8#367 /divide
+8#370 /oslash 8#371 /ugrave 8#372 /uacute 8#373 /ucircumflex
+8#374 /udieresis 8#375 /yacute 8#376 /thorn 8#377 /ydieresis] def
+/Times-Roman /Times-Roman-iso isovec ReEncode
+/Helvetica /Helvetica-iso isovec ReEncode
+ /DrawEllipse {
+	/endangle exch def
+	/startangle exch def
+	/yrad exch def
+	/xrad exch def
+	/y exch def
+	/x exch def
+	/savematrix mtrx currentmatrix def
+	x y tr xrad yrad sc 0 0 1 startangle endangle arc
+	closepath
+	savematrix setmatrix
+	} def
+
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+/pageheader {
+save
+newpath 0 316 moveto 0 0 lineto 1166 0 lineto 1166 316 lineto closepath clip newpath
+-48.2 316.4 translate
+1 -1 scale
+$F2psBegin
+10 setmiterlimit
+0 slj 0 slc
+ 0.06000 0.06000 sc
+} bind def
+/pagefooter {
+$F2psEnd
+restore
+} bind def
+%%EndProlog
+pageheader
+%
+% Fig objects follow
+%
+% 
+% here starts figure with depth 55
+% Polyline
+0 slj
+0 slc
+0.000 slw
+ [22 11 15 11] 0 sd
+n 11025 1860 m 16680 1860 l 16680 4500 l 11025 4500 l
+ cp gs /PC [[1.00 1.00 1.00] [0.00 0.00 0.00]] def
+15.00 15.00 sc P3 [16 0 0 -8 735.00 124.00] PATmp PATsp ef gr PATusp  [] 0 sd
+% Polyline
+ [22 11 15 11] 0 sd
+n 16680 1860 m 17595 1860 l 17595 4500 l 16680 4500 l
+ cp gs /PC [[1.00 1.00 1.00] [0.00 0.00 0.00]] def
+15.00 15.00 sc P1 [16 0 0 -8 1112.00 124.00] PATmp PATsp ef gr PATusp  [] 0 sd
+% Polyline
+ [22 11 15 11] 0 sd
+n 17595 1845 m 18060 1845 l 18060 4500 l 17595 4500 l
+ cp gs /PC [[1.00 1.00 1.00] [0.00 0.00 0.00]] def
+15.00 15.00 sc P5 [16 0 0 -16 1173.00 123.00] PATmp PATsp ef gr PATusp  [] 0 sd
+% here ends figure;
+% 
+% here starts figure with depth 50
+% Polyline
+0 slj
+0 slc
+15.000 slw
+gs  clippath
+16516 3609 m 16666 3854 l 16768 3791 l 16618 3546 l 16618 3546 l 16693 3782 l 16516 3609 l cp
+eoclip
+n 16590 3615 m
+ 16710 3810 l gs col0 s gr gr
+
+% arrowhead
+n 16516 3609 m 16693 3782 l 16618 3546 l  col0 s
+% Polyline
+2 slj
+n 16635 2205 m 16635 2206 l 16632 2209 l 16625 2218 l 16615 2231 l 16602 2250 l
+ 16587 2271 l 16573 2292 l 16560 2313 l 16549 2332 l 16540 2350 l
+ 16534 2367 l 16530 2382 l 16528 2397 l 16528 2413 l 16529 2428 l
+ 16532 2444 l 16536 2460 l 16542 2477 l 16549 2495 l 16557 2512 l
+ 16567 2529 l 16577 2545 l 16588 2560 l 16599 2574 l 16610 2586 l
+ 16621 2596 l 16632 2605 l 16643 2613 l 16651 2618 l 16660 2621 l
+ 16669 2624 l 16678 2626 l 16687 2627 l 16695 2627 l 16703 2626 l
+ 16710 2624 l 16717 2622 l 16723 2618 l 16728 2615 l 16732 2611 l
+ 16736 2606 l 16738 2602 l 16740 2597 l 16740 2593 l 16740 2588 l
+ 16738 2583 l 16736 2578 l 16733 2573 l 16728 2569 l 16723 2565 l
+ 16718 2561 l 16711 2558 l 16704 2556 l 16697 2554 l 16689 2553 l
+ 16681 2553 l 16673 2555 l 16666 2557 l 16658 2560 l 16650 2565 l
+ 16641 2572 l 16632 2580 l 16623 2590 l 16614 2603 l 16606 2616 l
+ 16597 2632 l 16589 2648 l 16582 2666 l 16576 2684 l 16572 2703 l
+ 16568 2721 l 16566 2739 l 16565 2757 l 16565 2775 l 16567 2793 l
+ 16570 2811 l 16574 2829 l 16580 2847 l 16587 2866 l 16595 2884 l
+ 16603 2901 l 16613 2918 l 16623 2933 l 16633 2946 l 16643 2958 l
+ 16653 2968 l 16663 2976 l 16673 2983 l 16680 2986 l 16687 2989 l
+ 16694 2991 l 16701 2992 l 16708 2992 l 16714 2991 l 16721 2990 l
+ 16727 2987 l 16733 2985 l 16738 2981 l 16742 2977 l 16746 2973 l
+ 16750 2968 l 16752 2964 l 16754 2959 l 16755 2954 l 16755 2950 l
+ 16755 2945 l 16754 2940 l 16752 2936 l 16749 2932 l 16746 2928 l
+ 16742 2924 l 16737 2920 l 16732 2917 l 16725 2914 l 16719 2912 l
+ 16712 2911 l 16704 2910 l 16697 2910 l 16689 2911 l 16681 2913 l
+ 16673 2916 l 16665 2920 l 16658 2924 l 16650 2930 l 16641 2938 l
+ 16633 2947 l 16624 2957 l 16615 2969 l 16606 2982 l 16598 2997 l
+ 16590 3013 l 16582 3030 l 16575 3048 l 16568 3066 l 16563 3084 l
+ 16558 3102 l 16555 3119 l 16552 3137 l 16551 3154 l 16550 3170 l
+ 16551 3186 l 16552 3202 l 16555 3219 l 16558 3235 l 16563 3251 l
+ 16568 3267 l 16574 3282 l 16581 3297 l 16589 3311 l 16597 3324 l
+ 16605 3335 l 16613 3345 l 16621 3353 l 16629 3360 l 16637 3366 l
+ 16645 3370 l 16653 3373 l 16660 3374 l 16668 3375 l 16676 3374 l
+ 16683 3372 l 16690 3369 l 16697 3365 l 16704 3360 l 16710 3355 l
+ 16716 3349 l 16720 3343 l 16724 3337 l 16728 3330 l 16730 3324 l
+ 16732 3318 l 16733 3313 l 16733 3309 l 16732 3305 l 16732 3302 l
+ 16731 3299 l 16730 3295 l 16728 3292 l 16726 3290 l 16724 3287 l
+ 16721 3285 l 16718 3283 l 16715 3282 l 16711 3281 l 16707 3280 l
+ 16703 3280 l 16699 3280 l 16694 3281 l 16690 3282 l 16685 3284 l
+ 16680 3286 l 16675 3289 l 16670 3292 l 16665 3296 l 16660 3300 l
+ 16655 3305 l 16646 3315 l 16637 3326 l 16627 3340 l 16617 3355 l
+ 16607 3372 l 16598 3390 l 16588 3410 l 16580 3429 l 16572 3449 l
+ 16566 3469 l 16560 3487 l 16556 3505 l 16554 3522 l 16553 3538 l
+ 16553 3555 l 16556 3571 l 16561 3587 l 16569 3604 l 16580 3622 l
+ 16594 3641 l 16609 3660 l 16624 3677 l 16637 3691 l 16646 3700 l
+ 16649 3704 l
+ 16650 3705 l gs col0 s gr 
+% Polyline
+0 slj
+gs  clippath
+17430 3565 m 17580 3810 l 17682 3747 l 17532 3502 l 17532 3502 l 17607 3738 l 17430 3565 l cp
+eoclip
+n 17504 3571 m
+ 17624 3766 l gs col0 s gr gr
+
+% arrowhead
+n 17430 3565 m 17607 3738 l 17532 3502 l  col0 s
+% Polyline
+2 slj
+n 17549 2161 m 17549 2162 l 17546 2165 l 17539 2174 l 17529 2187 l 17516 2206 l
+ 17501 2227 l 17487 2248 l 17474 2269 l 17463 2288 l 17454 2306 l
+ 17448 2323 l 17444 2338 l 17442 2353 l 17442 2369 l 17443 2384 l
+ 17446 2400 l 17450 2416 l 17456 2433 l 17463 2451 l 17471 2468 l
+ 17481 2485 l 17491 2501 l 17502 2516 l 17513 2530 l 17524 2542 l
+ 17535 2552 l 17546 2561 l 17557 2569 l 17565 2574 l 17574 2577 l
+ 17583 2580 l 17592 2582 l 17601 2583 l 17609 2583 l 17617 2582 l
+ 17624 2580 l 17631 2578 l 17637 2574 l 17642 2571 l 17646 2567 l
+ 17650 2562 l 17652 2558 l 17654 2553 l 17654 2549 l 17654 2544 l
+ 17652 2539 l 17650 2534 l 17647 2529 l 17642 2525 l 17637 2521 l
+ 17632 2517 l 17625 2514 l 17618 2512 l 17611 2510 l 17603 2509 l
+ 17595 2509 l 17587 2511 l 17580 2513 l 17572 2516 l 17564 2521 l
+ 17555 2528 l 17546 2536 l 17537 2546 l 17528 2559 l 17520 2572 l
+ 17511 2588 l 17503 2604 l 17496 2622 l 17490 2640 l 17486 2659 l
+ 17482 2677 l 17480 2695 l 17479 2713 l 17479 2731 l 17481 2749 l
+ 17484 2767 l 17488 2785 l 17494 2803 l 17501 2822 l 17509 2840 l
+ 17517 2857 l 17527 2874 l 17537 2889 l 17547 2902 l 17557 2914 l
+ 17567 2924 l 17577 2932 l 17587 2939 l 17594 2942 l 17601 2945 l
+ 17608 2947 l 17615 2948 l 17622 2948 l 17628 2947 l 17635 2946 l
+ 17641 2943 l 17647 2941 l 17652 2937 l 17656 2933 l 17660 2929 l
+ 17664 2924 l 17666 2920 l 17668 2915 l 17669 2910 l 17669 2906 l
+ 17669 2901 l 17668 2896 l 17666 2892 l 17663 2888 l 17660 2884 l
+ 17656 2880 l 17651 2876 l 17646 2873 l 17639 2870 l 17633 2868 l
+ 17626 2867 l 17618 2866 l 17611 2866 l 17603 2867 l 17595 2869 l
+ 17587 2872 l 17579 2876 l 17572 2880 l 17564 2886 l 17555 2894 l
+ 17547 2903 l 17538 2913 l 17529 2925 l 17520 2938 l 17512 2953 l
+ 17504 2969 l 17496 2986 l 17489 3004 l 17482 3022 l 17477 3040 l
+ 17472 3058 l 17469 3075 l 17466 3093 l 17465 3110 l 17464 3126 l
+ 17465 3142 l 17466 3158 l 17469 3175 l 17472 3191 l 17477 3207 l
+ 17482 3223 l 17488 3238 l 17495 3253 l 17503 3267 l 17511 3280 l
+ 17519 3291 l 17527 3301 l 17535 3309 l 17543 3316 l 17551 3322 l
+ 17559 3326 l 17567 3329 l 17574 3330 l 17582 3331 l 17590 3330 l
+ 17597 3328 l 17604 3325 l 17611 3321 l 17618 3316 l 17624 3311 l
+ 17630 3305 l 17634 3299 l 17638 3293 l 17642 3286 l 17644 3280 l
+ 17646 3274 l 17647 3269 l 17647 3265 l 17646 3261 l 17646 3258 l
+ 17645 3255 l 17644 3251 l 17642 3248 l 17640 3246 l 17638 3243 l
+ 17635 3241 l 17632 3239 l 17629 3238 l 17625 3237 l 17621 3236 l
+ 17617 3236 l 17613 3236 l 17608 3237 l 17604 3238 l 17599 3240 l
+ 17594 3242 l 17589 3245 l 17584 3248 l 17579 3252 l 17574 3256 l
+ 17569 3261 l 17560 3271 l 17551 3282 l 17541 3296 l 17531 3311 l
+ 17521 3328 l 17512 3346 l 17502 3366 l 17494 3385 l 17486 3405 l
+ 17480 3425 l 17474 3443 l 17470 3461 l 17468 3478 l 17467 3494 l
+ 17467 3511 l 17470 3527 l 17475 3543 l 17483 3560 l 17494 3578 l
+ 17508 3597 l 17523 3616 l 17538 3633 l 17551 3647 l 17560 3656 l
+ 17563 3660 l
+ 17564 3661 l gs col0 s gr 
+% Polyline
+0 slj
+gs  clippath
+17895 3565 m 18045 3810 l 18147 3747 l 17997 3502 l 17997 3502 l 18072 3738 l 17895 3565 l cp
+eoclip
+n 17969 3571 m
+ 18089 3766 l gs col0 s gr gr
+
+% arrowhead
+n 17895 3565 m 18072 3738 l 17997 3502 l  col0 s
+% Polyline
+2 slj
+n 18014 2161 m 18014 2162 l 18011 2165 l 18004 2174 l 17994 2187 l 17981 2206 l
+ 17966 2227 l 17952 2248 l 17939 2269 l 17928 2288 l 17919 2306 l
+ 17913 2323 l 17909 2338 l 17907 2353 l 17907 2369 l 17908 2384 l
+ 17911 2400 l 17915 2416 l 17921 2433 l 17928 2451 l 17936 2468 l
+ 17946 2485 l 17956 2501 l 17967 2516 l 17978 2530 l 17989 2542 l
+ 18000 2552 l 18011 2561 l 18022 2569 l 18030 2574 l 18039 2577 l
+ 18048 2580 l 18057 2582 l 18066 2583 l 18074 2583 l 18082 2582 l
+ 18089 2580 l 18096 2578 l 18102 2574 l 18107 2571 l 18111 2567 l
+ 18115 2562 l 18117 2558 l 18119 2553 l 18119 2549 l 18119 2544 l
+ 18117 2539 l 18115 2534 l 18112 2529 l 18107 2525 l 18102 2521 l
+ 18097 2517 l 18090 2514 l 18083 2512 l 18076 2510 l 18068 2509 l
+ 18060 2509 l 18052 2511 l 18045 2513 l 18037 2516 l 18029 2521 l
+ 18020 2528 l 18011 2536 l 18002 2546 l 17993 2559 l 17985 2572 l
+ 17976 2588 l 17968 2604 l 17961 2622 l 17955 2640 l 17951 2659 l
+ 17947 2677 l 17945 2695 l 17944 2713 l 17944 2731 l 17946 2749 l
+ 17949 2767 l 17953 2785 l 17959 2803 l 17966 2822 l 17974 2840 l
+ 17982 2857 l 17992 2874 l 18002 2889 l 18012 2902 l 18022 2914 l
+ 18032 2924 l 18042 2932 l 18052 2939 l 18059 2942 l 18066 2945 l
+ 18073 2947 l 18080 2948 l 18087 2948 l 18093 2947 l 18100 2946 l
+ 18106 2943 l 18112 2941 l 18117 2937 l 18121 2933 l 18125 2929 l
+ 18129 2924 l 18131 2920 l 18133 2915 l 18134 2910 l 18134 2906 l
+ 18134 2901 l 18133 2896 l 18131 2892 l 18128 2888 l 18125 2884 l
+ 18121 2880 l 18116 2876 l 18111 2873 l 18104 2870 l 18098 2868 l
+ 18091 2867 l 18083 2866 l 18076 2866 l 18068 2867 l 18060 2869 l
+ 18052 2872 l 18044 2876 l 18037 2880 l 18029 2886 l 18020 2894 l
+ 18012 2903 l 18003 2913 l 17994 2925 l 17985 2938 l 17977 2953 l
+ 17969 2969 l 17961 2986 l 17954 3004 l 17947 3022 l 17942 3040 l
+ 17937 3058 l 17934 3075 l 17931 3093 l 17930 3110 l 17929 3126 l
+ 17930 3142 l 17931 3158 l 17934 3175 l 17937 3191 l 17942 3207 l
+ 17947 3223 l 17953 3238 l 17960 3253 l 17968 3267 l 17976 3280 l
+ 17984 3291 l 17992 3301 l 18000 3309 l 18008 3316 l 18016 3322 l
+ 18024 3326 l 18032 3329 l 18039 3330 l 18047 3331 l 18055 3330 l
+ 18062 3328 l 18069 3325 l 18076 3321 l 18083 3316 l 18089 3311 l
+ 18095 3305 l 18099 3299 l 18103 3293 l 18107 3286 l 18109 3280 l
+ 18111 3274 l 18112 3269 l 18112 3265 l 18111 3261 l 18111 3258 l
+ 18110 3255 l 18109 3251 l 18107 3248 l 18105 3246 l 18103 3243 l
+ 18100 3241 l 18097 3239 l 18094 3238 l 18090 3237 l 18086 3236 l
+ 18082 3236 l 18078 3236 l 18073 3237 l 18069 3238 l 18064 3240 l
+ 18059 3242 l 18054 3245 l 18049 3248 l 18044 3252 l 18039 3256 l
+ 18034 3261 l 18025 3271 l 18016 3282 l 18006 3296 l 17996 3311 l
+ 17986 3328 l 17977 3346 l 17967 3366 l 17959 3385 l 17951 3405 l
+ 17945 3425 l 17939 3443 l 17935 3461 l 17933 3478 l 17932 3494 l
+ 17932 3511 l 17935 3527 l 17940 3543 l 17948 3560 l 17959 3578 l
+ 17973 3597 l 17988 3616 l 18003 3633 l 18016 3647 l 18025 3656 l
+ 18028 3660 l
+ 18029 3661 l gs col0 s gr 
+% Polyline
+0 slj
+gs  clippath
+19932 4575 m 20220 4575 l 20220 4455 l 19932 4455 l 19932 4455 l 20172 4515 l 19932 4575 l cp
+eoclip
+n 11055 4515 m
+ 20205 4515 l gs col0 s gr gr
+
+% arrowhead
+n 19932 4575 m 20172 4515 l 19932 4455 l  col0 s
+% Polyline
+gs  clippath
+11100 843 m 11100 555 l 10980 555 l 10980 843 l 10980 843 l 11040 603 l 11100 843 l cp
+eoclip
+n 11040 4515 m
+ 11040 570 l gs col0 s gr gr
+
+% arrowhead
+n 11100 843 m 11040 603 l 10980 843 l  col0 s
+% Polyline
+7.500 slw
+ [45 22 15 22] 0 sd
+n 16680 255 m
+ 16680 4515 l gs col0 s gr  [] 0 sd
+% Polyline
+ [45 22 15 22] 0 sd
+n 17595 255 m
+ 17595 4515 l gs col0 s gr  [] 0 sd
+% Polyline
+ [45 22 15 22] 0 sd
+n 18060 225 m
+ 18060 4485 l gs col0 s gr  [] 0 sd
+% Polyline
+15.000 slw
+ [68 34 15 34] 0 sd
+n 16680 1845 m
+ 16680 4500 l gs col0 s gr  [] 0 sd
+% Polyline
+ [68 34 15 34] 0 sd
+n 17610 1830 m
+ 17610 4485 l gs col0 s gr  [] 0 sd
+% Polyline
+ [68 34 15 34] 0 sd
+n 18060 1860 m
+ 18060 4515 l gs col0 s gr  [] 0 sd
+% Ellipse
+n 1245 1725 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2010 1713 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2850 1698 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 3645 1698 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 4455 1668 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 5250 1623 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 5955 1488 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 6510 1203 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 1245 2598 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2010 2598 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2895 2583 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 3660 2583 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 4485 2568 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 5280 2508 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 5985 2328 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 7050 1683 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 7395 1188 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 1290 3513 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2010 3498 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 2880 3498 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 3675 3498 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 4500 3483 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 5295 3423 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 6555 2928 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 7065 2523 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 7485 2103 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 7740 1623 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 7875 1188 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 5994 3242 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Ellipse
+n 6544 2059 148 148 0 360 DrawEllipse gs col0 s gr
+
+% Polyline
+gs  clippath
+9702 4185 m 9990 4185 l 9990 4065 l 9702 4065 l 9702 4065 l 9942 4125 l 9702 4185 l cp
+eoclip
+n 825 4125 m
+ 9975 4125 l gs col0 s gr gr
+
+% arrowhead
+n 9702 4185 m 9942 4125 l 9702 4065 l  col0 s
+% Polyline
+ [68 34 15 34] 0 sd
+n 6525 4125 m
+ 6525 225 l gs col0 s gr  [] 0 sd
+% Polyline
+7.500 slw
+ [45] 0 sd
+n 6285 1200 m
+ 8505 1200 l gs col0 s gr  [] 0 sd
+% Polyline
+15.000 slw
+ [68 34 15 34] 0 sd
+n 7425 4125 m
+ 7425 225 l gs col0 s gr  [] 0 sd
+% Polyline
+ [68 34 15 34] 0 sd
+n 7845 4140 m
+ 7845 240 l gs col0 s gr  [] 0 sd
+% Polyline
+2 slj
+n 900 1725 m 901 1725 l 904 1725 l 910 1725 l 919 1725 l 932 1725 l
+ 950 1725 l 974 1725 l 1002 1725 l 1037 1725 l 1078 1725 l
+ 1126 1725 l 1179 1724 l 1239 1724 l 1305 1724 l 1377 1724 l
+ 1455 1724 l 1537 1723 l 1624 1723 l 1715 1723 l 1810 1723 l
+ 1907 1722 l 2007 1722 l 2108 1721 l 2211 1721 l 2314 1721 l
+ 2417 1720 l 2520 1720 l 2622 1719 l 2723 1719 l 2822 1718 l
+ 2920 1717 l 3016 1717 l 3109 1716 l 3200 1715 l 3288 1715 l
+ 3374 1714 l 3457 1713 l 3538 1713 l 3616 1712 l 3691 1711 l
+ 3763 1710 l 3833 1709 l 3901 1708 l 3966 1707 l 4028 1706 l
+ 4089 1705 l 4147 1704 l 4203 1703 l 4257 1702 l 4309 1701 l
+ 4360 1699 l 4409 1698 l 4456 1697 l 4502 1695 l 4546 1694 l
+ 4589 1692 l 4632 1691 l 4673 1689 l 4713 1688 l 4777 1685 l
+ 4840 1681 l 4900 1678 l 4958 1675 l 5015 1671 l 5070 1667 l
+ 5124 1663 l 5176 1658 l 5226 1654 l 5275 1649 l 5323 1643 l
+ 5369 1638 l 5414 1632 l 5458 1626 l 5500 1619 l 5540 1613 l
+ 5579 1606 l 5617 1599 l 5653 1591 l 5688 1584 l 5721 1576 l
+ 5753 1568 l 5783 1559 l 5812 1551 l 5840 1542 l 5867 1533 l
+ 5892 1525 l 5917 1515 l 5940 1506 l 5963 1497 l 5985 1487 l
+ 6006 1478 l 6027 1468 l 6047 1458 l 6067 1448 l 6088 1438 l
+ 6112 1425 l 6136 1411 l 6161 1398 l 6186 1383 l 6212 1368 l
+ 6238 1352 l 6266 1334 l 6295 1316 l 6326 1296 l 6358 1275 l
+ 6392 1253 l 6427 1229 l 6464 1204 l 6503 1178 l 6543 1151 l
+ 6583 1123 l 6624 1094 l 6665 1066 l 6705 1038 l 6742 1012 l
+ 6777 987 l 6808 965 l 6835 946 l 6857 931 l 6874 919 l
+ 6886 910 l 6894 904 l 6898 901 l
+ 6900 900 l gs col0 s gr 
+% Polyline
+n 900 2625 m 901 2625 l 904 2625 l 910 2625 l 919 2625 l 932 2625 l
+ 950 2625 l 974 2625 l 1002 2625 l 1037 2625 l 1078 2625 l
+ 1126 2625 l 1179 2624 l 1239 2624 l 1305 2624 l 1377 2624 l
+ 1455 2624 l 1537 2623 l 1624 2623 l 1715 2623 l 1810 2623 l
+ 1907 2622 l 2007 2622 l 2108 2621 l 2211 2621 l 2314 2621 l
+ 2417 2620 l 2520 2620 l 2622 2619 l 2723 2619 l 2822 2618 l
+ 2920 2617 l 3016 2617 l 3109 2616 l 3200 2615 l 3288 2615 l
+ 3374 2614 l 3457 2613 l 3538 2613 l 3616 2612 l 3691 2611 l
+ 3763 2610 l 3833 2609 l 3901 2608 l 3966 2607 l 4028 2606 l
+ 4089 2605 l 4147 2604 l 4203 2603 l 4257 2602 l 4309 2601 l
+ 4360 2599 l 4409 2598 l 4456 2597 l 4502 2595 l 4546 2594 l
+ 4589 2592 l 4632 2591 l 4673 2589 l 4713 2588 l 4777 2585 l
+ 4840 2581 l 4900 2578 l 4958 2575 l 5015 2571 l 5070 2567 l
+ 5124 2563 l 5176 2558 l 5226 2554 l 5275 2549 l 5323 2543 l
+ 5369 2538 l 5414 2532 l 5458 2526 l 5500 2519 l 5540 2513 l
+ 5579 2506 l 5617 2499 l 5653 2491 l 5688 2484 l 5721 2476 l
+ 5753 2468 l 5783 2459 l 5812 2451 l 5840 2442 l 5867 2433 l
+ 5892 2425 l 5917 2415 l 5940 2406 l 5963 2397 l 5985 2387 l
+ 6006 2378 l 6027 2368 l 6047 2358 l 6067 2348 l 6088 2338 l
+ 6112 2325 l 6136 2311 l 6161 2298 l 6186 2283 l 6212 2268 l
+ 6238 2252 l 6266 2234 l 6295 2216 l 6326 2196 l 6358 2175 l
+ 6392 2153 l 6427 2129 l 6464 2104 l 6503 2078 l 6543 2051 l
+ 6583 2023 l 6624 1994 l 6665 1966 l 6705 1938 l 6742 1912 l
+ 6777 1887 l 6808 1865 l 6835 1846 l 6857 1831 l 6874 1819 l
+ 6886 1810 l 6894 1804 l 6898 1801 l
+ 6900 1800 l gs col0 s gr 
+% Polyline
+n 900 3525 m 901 3525 l 904 3525 l 910 3525 l 919 3525 l 932 3525 l
+ 950 3525 l 974 3525 l 1002 3525 l 1037 3525 l 1078 3525 l
+ 1126 3525 l 1179 3524 l 1239 3524 l 1305 3524 l 1377 3524 l
+ 1455 3524 l 1537 3523 l 1624 3523 l 1715 3523 l 1810 3523 l
+ 1907 3522 l 2007 3522 l 2108 3521 l 2211 3521 l 2314 3521 l
+ 2417 3520 l 2520 3520 l 2622 3519 l 2723 3519 l 2822 3518 l
+ 2920 3517 l 3016 3517 l 3109 3516 l 3200 3515 l 3288 3515 l
+ 3374 3514 l 3457 3513 l 3538 3513 l 3616 3512 l 3691 3511 l
+ 3763 3510 l 3833 3509 l 3901 3508 l 3966 3507 l 4028 3506 l
+ 4089 3505 l 4147 3504 l 4203 3503 l 4257 3502 l 4309 3501 l
+ 4360 3499 l 4409 3498 l 4456 3497 l 4502 3495 l 4546 3494 l
+ 4589 3492 l 4632 3491 l 4673 3489 l 4713 3488 l 4777 3485 l
+ 4840 3481 l 4900 3478 l 4958 3475 l 5015 3471 l 5070 3467 l
+ 5124 3463 l 5176 3458 l 5226 3454 l 5275 3449 l 5323 3443 l
+ 5369 3438 l 5414 3432 l 5458 3426 l 5500 3419 l 5540 3413 l
+ 5579 3406 l 5617 3399 l 5653 3391 l 5688 3384 l 5721 3376 l
+ 5753 3368 l 5783 3359 l 5812 3351 l 5840 3342 l 5867 3333 l
+ 5892 3325 l 5917 3315 l 5940 3306 l 5963 3297 l 5985 3287 l
+ 6006 3278 l 6027 3268 l 6047 3258 l 6067 3248 l 6088 3238 l
+ 6112 3225 l 6136 3211 l 6161 3198 l 6186 3183 l 6212 3168 l
+ 6238 3152 l 6266 3134 l 6295 3116 l 6326 3096 l 6358 3075 l
+ 6392 3053 l 6427 3029 l 6464 3004 l 6503 2978 l 6543 2951 l
+ 6583 2923 l 6624 2894 l 6665 2866 l 6705 2838 l 6742 2812 l
+ 6777 2787 l 6808 2765 l 6835 2746 l 6857 2731 l 6874 2719 l
+ 6886 2710 l 6894 2704 l 6898 2701 l
+ 6900 2700 l gs col0 s gr 
+% Polyline
+n 6682 1963 m 6684 1961 l 6689 1958 l 6697 1952 l 6710 1943 l 6727 1931 l
+ 6747 1916 l 6770 1900 l 6795 1881 l 6821 1862 l 6847 1843 l
+ 6872 1824 l 6896 1805 l 6919 1787 l 6940 1770 l 6960 1753 l
+ 6979 1737 l 6997 1721 l 7015 1705 l 7031 1689 l 7048 1672 l
+ 7065 1656 l 7080 1639 l 7095 1623 l 7111 1606 l 7127 1588 l
+ 7143 1569 l 7159 1549 l 7176 1529 l 7193 1508 l 7211 1486 l
+ 7228 1464 l 7245 1441 l 7262 1418 l 7280 1395 l 7296 1372 l
+ 7313 1349 l 7329 1326 l 7344 1304 l 7359 1282 l 7374 1260 l
+ 7387 1239 l 7401 1218 l 7413 1197 l 7425 1178 l 7437 1158 l
+ 7449 1137 l 7461 1116 l 7473 1094 l 7484 1073 l 7496 1050 l
+ 7508 1027 l 7520 1002 l 7532 975 l 7545 948 l 7558 918 l
+ 7572 888 l 7585 856 l 7599 825 l 7612 795 l 7624 767 l
+ 7634 742 l 7643 722 l 7649 707 l 7654 696 l 7656 691 l
+
+ 7657 688 l gs col0 s gr 
+% Polyline
+n 6787 2777 m 6789 2775 l 6794 2772 l 6802 2766 l 6815 2757 l 6832 2745 l
+ 6852 2730 l 6875 2714 l 6900 2695 l 6926 2676 l 6952 2657 l
+ 6977 2638 l 7001 2619 l 7024 2601 l 7045 2584 l 7065 2567 l
+ 7084 2551 l 7102 2535 l 7120 2519 l 7136 2503 l 7153 2486 l
+ 7170 2470 l 7185 2453 l 7200 2437 l 7216 2420 l 7232 2402 l
+ 7248 2383 l 7264 2363 l 7281 2343 l 7298 2322 l 7316 2300 l
+ 7333 2278 l 7350 2255 l 7367 2232 l 7385 2209 l 7401 2186 l
+ 7418 2163 l 7434 2140 l 7449 2118 l 7464 2096 l 7479 2074 l
+ 7492 2053 l 7506 2032 l 7518 2011 l 7530 1992 l 7542 1972 l
+ 7554 1951 l 7566 1930 l 7578 1908 l 7589 1887 l 7601 1864 l
+ 7613 1841 l 7625 1816 l 7637 1789 l 7650 1762 l 7663 1732 l
+ 7677 1702 l 7690 1670 l 7704 1639 l 7717 1609 l 7729 1581 l
+ 7739 1556 l 7748 1536 l 7754 1521 l 7759 1510 l 7761 1505 l
+
+ 7762 1502 l gs col0 s gr 
+% Polyline
+n 7757 1538 m
+ 7997 623 l gs col0 s gr 
+% Polyline
+n 6840 945 m 6843 943 l 6849 938 l 6858 929 l 6872 917 l 6888 903 l
+ 6906 887 l 6923 871 l 6940 855 l 6956 840 l 6970 826 l
+ 6983 813 l 6995 801 l 7005 789 l 7015 777 l 7025 765 l
+ 7034 753 l 7044 740 l 7053 726 l 7063 711 l 7073 695 l
+ 7085 676 l 7097 656 l 7109 634 l 7123 610 l 7135 588 l
+ 7147 566 l 7157 549 l 7164 536 l 7168 529 l
+ 7170 525 l gs col0 s gr 
+/Times-Roman-iso ff 416.67 scf sf
+6015 4695 m
+gs 1 -1 sc (y) col0 sh gr
+/Times-Roman-iso ff 333.33 scf sf
+6180 4815 m
+gs 1 -1 sc (max) col0 sh gr
+/Times-Roman-iso ff 333.33 scf sf
+6240 4560 m
+gs 1 -1 sc (n+1) col0 sh gr
+/Symbol ff 416.67 scf sf
+16800 1470 m
+gs 1 -1 sc (n = ) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+17325 1470 m
+gs 1 -1 sc (n) col0 sh gr
+/Symbol ff 416.67 scf sf
+17970 1635 m
+gs 1 -1 sc  90.0 rot (n = ) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+17970 1020 m
+gs 1 -1 sc  90.0 rot (n-1) col0 sh gr
+/Helvetica-iso ff 416.67 scf sf
+11265 360 m
+gs 1 -1 sc (\(b\)) col0 sh gr
+/Times-Roman-iso ff 500.00 scf sf
+19860 5160 m
+gs 1 -1 sc (y) col0 sh gr
+/Times-Roman-iso ff 500.00 scf sf
+10605 870 m
+gs 1 -1 sc (x) col0 sh gr
+/Symbol ff 416.67 scf sf
+13380 1515 m
+gs 1 -1 sc (n = ) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+13995 1500 m
+gs 1 -1 sc (n+1) col0 sh gr
+/Times-Roman-iso ff 500.00 scf sf
+9660 4740 m
+gs 1 -1 sc (y) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+6930 4710 m
+gs 1 -1 sc (y) col0 sh gr
+/Times-Roman-iso ff 333.33 scf sf
+7095 4830 m
+gs 1 -1 sc (max) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+7695 4695 m
+gs 1 -1 sc (y) col0 sh gr
+/Times-Roman-iso ff 333.33 scf sf
+7860 4815 m
+gs 1 -1 sc (max) col0 sh gr
+/Times-Roman-iso ff 333.33 scf sf
+7155 4575 m
+gs 1 -1 sc (n) col0 sh gr
+/Times-Roman-iso ff 333.33 scf sf
+7920 4560 m
+gs 1 -1 sc (n-1) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+1485 1365 m
+gs 1 -1 sc (n+1) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+1500 2325 m
+gs 1 -1 sc (n) col0 sh gr
+/Times-Roman-iso ff 416.67 scf sf
+1500 3210 m
+gs 1 -1 sc (n-1) col0 sh gr
+/Helvetica-iso ff 416.67 scf sf
+1035 390 m
+gs 1 -1 sc (\(a\)) col0 sh gr
+/Symbol ff 416.67 scf sf
+8700 1350 m
+gs 1 -1 sc (m ) col0 sh gr
+/Times-Roman-iso ff 333.33 scf sf
+9000 1425 m
+gs 1 -1 sc (max) col0 sh gr
+% here ends figure;
+pagefooter
+showpage
+%%Trailer
+end
+%EOF

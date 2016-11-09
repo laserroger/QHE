@@ -1,0 +1,77 @@
+\contentsline {chapter}{\numberline {1}简介}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}(量子)Hall效应的历史}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}研究的系统}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}经典Hall效应}{2}{subsection.1.1.2}
+\contentsline {subsubsection}{电阻率与电阻}{3}{section*.2}
+\contentsline {subsection}{\numberline {1.1.3}Shubnikov-de Haas效应}{3}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}整数量子Hall效应}{4}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}分数量子Hall效应}{5}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}石墨烯中的相对论性量子Hall效应}{6}{subsection.1.1.6}
+\contentsline {section}{\numberline {1.2}二维电子系统}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}场效应管}{6}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}半导体异质结}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}石墨烯}{8}{subsection.1.2.3}
+\contentsline {chapter}{\numberline {2}Landau 量子化}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}$B=0$下的单粒子Hamiltonian原型}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}自由粒子的Hamiltonian}{9}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}石墨烯中的Dirac Hamiltonian}{10}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}非零磁场的Hamiltonian}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Peierls替换与最小耦合}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}量子力学处理}{12}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Landau能级}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}非相对论性Landau能级}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}相对论性Landau能级}{15}{subsection.2.3.2}
+\contentsline {subsubsection}{相对论性Landau能级的实验观测}{15}{section*.3}
+\contentsline {subsection}{\numberline {2.3.3}能级简并}{16}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}能级简并的半经典解释}{18}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}本征态}{20}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}对称规范下的波函数}{20}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Landau规范下的波函数}{22}{subsection.2.4.2}
+\contentsline {chapter}{\numberline {3}整数量子Hall效应}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}外静电势下电子的运动}{23}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}半经典处理}{24}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}$x$-平移对称性的静电势}{25}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}单一Landau能级的电导}{26}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}边界态}{27}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}两端vs六端法测量}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}两端法测量}{28}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}六端法测量}{29}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}整数量子Hall效应和过滤沥滤法}{30}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}光学测量中的延展/局域体态}{32}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}平台期的转移与标度变换律}{33}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}石墨烯中的相对论性Hall效应}{34}{section.3.5}
+\contentsline {chapter}{\numberline {4}强关联与分数量子Hall效应}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}库伦相互作用的效应}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Laughlin理论}{41}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}二粒子波函数与Laughlin规范}{41}{subsection.4.2.1}
+\contentsline {subsubsection}{变分法的参数}{42}{section*.4}
+\contentsline {subsubsection}{在$\nu =1$的Laughlin波函数}{42}{section*.5}
+\contentsline {subsection}{\numberline {4.2.2}Haldane赝势}{43}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}分数电荷的准粒子与准空穴}{45}{subsection.4.2.3}
+\contentsline {subsubsection}{准空穴}{45}{section*.6}
+\contentsline {subsubsection}{准粒子}{47}{section*.7}
+\contentsline {subsection}{\numberline {4.2.4}分数电荷准粒子的实验观察}{47}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Laughlin的等离子体类比}{48}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}分数统计}{49}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}波色子，费米子，任意子——简介}{49}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Laughlin准粒子的统计性质}{51}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Laughlin波函数的推广}{52}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}复合费米子}{52}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}半满Landau能级和Pfaffian态}{54}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}多组分的量子Hall系统简介}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}多组分系统的不同之处}{57}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}电子自旋的效应}{57}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}石墨烯：四组分量子Hall系统}{58}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}双层量子Hall系统}{58}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}宽量子阱}{59}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}$\nu =1$态}{59}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}量子Hall反铁磁性}{60}{subsection.5.2.1}
+\contentsline {subsubsection}{集体激发}{60}{section*.8}
+\contentsline {subsection}{\numberline {5.2.2}双层系统的激发态凝聚}{61}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}石墨烯的SU(4)反铁磁性}{63}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}多组分波函数}{64}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Halperin波函数}{64}{subsection.5.3.1}
+\contentsline {subsubsection}{Halperin态的物理对应}{66}{section*.9}
+\contentsline {subsection}{\numberline {5.3.2}Halperin波函数的推广}{67}{subsection.5.3.2}
+\contentsline {chapter}{\numberline {A}石墨烯的电子能带结构}{69}{appendix.A}
+\contentsline {chapter}{\numberline {B}有质量的Dirac粒子的Landau能级}{73}{appendix.B}
